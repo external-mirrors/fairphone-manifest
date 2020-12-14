@@ -72,7 +72,7 @@
   <project path="external/cblas" name="platform/external/cblas" groups="aosp,pdk" />
   <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="aosp,pdk" />
   <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="aosp,pdk" />
-  <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="aosp,pdk" clone-depth="1" />
+  <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="pdk" clone-depth="1" />
   <project path="external/clang" name="platform/external/clang" groups="aosp,pdk" />
   <project path="external/cmockery" name="platform/external/cmockery" groups="aosp,pdk" />
   <project path="external/cn-cbor" name="platform/external/cn-cbor" groups="aosp,pdk" />
