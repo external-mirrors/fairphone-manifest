@@ -631,6 +631,6 @@
   <project path="vendor/fairphone/media" name="vendor/fairphone/media" groups="fairphone" />
   <project path="vendor/fairphone/tools" name="vendor/fairphone/tools" groups="fairphone" revision="refs/heads/master" />
   <project path="vendor/qcom/opensource/dataservices" name="platform/vendor/qcom-opensource/dataservices" groups="caf,lineage" />
-  <project path="vendor/qcom/opensource/recovery-ext" name="platform/vendor/qcom-opensource/recovery-ext" groups="caf" revision="refs/heads/staging/p/fp2" />
+  <project path="vendor/qcom/opensource/recovery-ext" name="platform/vendor/qcom-opensource/recovery-ext" groups="caf" />
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 </manifest>
