@@ -43,7 +43,6 @@
   <project path="external/abi-compliance-checker" name="platform/external/abi-compliance-checker" groups="aosp,pdk" />
   <project path="external/abi-dumper" name="platform/external/abi-dumper" groups="aosp,pdk" />
   <project path="external/adhd" name="platform/external/adhd" groups="aosp,pdk" />
-  <project path="external/adt-infra" name="platform/external/adt-infra" groups="aosp,adt-infra,notdefault,pdk-fs" />
   <project path="external/android-clat" name="platform/external/android-clat" groups="aosp,pdk" />
   <project path="external/androidplot" name="platform/external/androidplot" groups="aosp,pdk" />
   <project path="external/annotation-tools" name="platform/external/annotation-tools" groups="aosp,pdk" />
@@ -593,21 +592,14 @@
   <project path="toolchain/pgo-profiles" name="toolchain/pgo-profiles" groups="aosp,pdk" />
   <project path="tools/acloud" name="platform/tools/acloud" groups="aosp,tools,vts,pdk,tradefed" />
   <project path="tools/appbundle" name="platform/tools/appbundle" groups="aosp" />
-  <project path="tools/adt/idea" name="platform/tools/adt/idea" groups="aosp,notdefault,tools" />
   <project path="tools/apksig" name="platform/tools/apksig" groups="aosp,pdk,tradefed" />
   <project path="tools/apkzlib" name="platform/tools/apkzlib" groups="aosp,pdk,tradefed" />
-  <project path="tools/base" name="platform/tools/base" groups="aosp,notdefault,tools" />
-  <project path="tools/build" name="platform/tools/build" groups="aosp,notdefault,tools" />
   <project path="tools/dexter" name="platform/tools/dexter" groups="aosp,tools,pdk-fs" />
   <project path="tools/external/fat32lib" name="platform/tools/external/fat32lib" groups="aosp,tools" />
   <project path="tools/external/gradle" name="platform/tools/external/gradle" groups="aosp,tools" clone-depth="1" />
-  <project path="tools/idea" name="platform/tools/idea" groups="aosp,notdefault,tools" />
   <project path="tools/loganalysis" name="platform/tools/loganalysis" groups="aosp,nopresubmit,pdk,tradefed" />
   <project path="tools/metalava" name="platform/tools/metalava" groups="aosp,pdk,tools" />
-  <project path="tools/motodev" name="platform/tools/motodev" groups="aosp,notdefault,motodev" />
   <project path="tools/repohooks" name="platform/tools/repohooks" groups="aosp,adt-infra,cts,developers,motodev,pdk,tools,tradefed" />
-  <project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="aosp,notdefault,tools" />
-  <project path="tools/swt" name="platform/tools/swt" groups="aosp,notdefault,tools" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="aosp,pdk" />
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="aosp,pdk,tradefed" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="aosp,pdk,tradefed" />
