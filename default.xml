@@ -614,6 +614,7 @@
   <project path="vendor/fairphone/apps/ProgrammableButton" name="vendor/fairphone/apps/ProgrammableButton" groups="fairphone" />
   <project path="vendor/fairphone/apps/ProximitySensor" name="vendor/fairphone/apps/ProximitySensor" groups="fairphone" clone-depth="1" revision="refs/heads/int/p/fp2-prebuilts" />
   <project path="vendor/fairphone/apps/Settings" name="vendor/fairphone/apps/Settings" groups="fairphone" clone-depth="1" revision="refs/heads/int/p/fp2-prebuilts" />
+  <project path="vendor/fairphone/apps/SetupWizard" name="vendor/fairphone/apps/SetupWizard" groups="fairphone" revision="refs/heads/int/p/fp2" />
   <project path="vendor/fairphone/apps/Updater" name="vendor/fairphone/apps/Updater" groups="fairphone" clone-depth="1" revision="refs/heads/int/p/fp2-prebuilts" />
   <project path="vendor/fairphone/fp2" name="vendor/fairphone/fp2" groups="fairphone" />
   <project path="vendor/fairphone/fp2-common" name="vendor/fairphone/fp2-common" groups="fairphone" />
