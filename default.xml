@@ -606,7 +606,7 @@
   <project path="vendor/codeaurora/telephony" name="platform/vendor/codeaurora/telephony" groups="lineage" />
   <project path="vendor/f-droid/fdroidclient" name="vendor/f-droid/fdroidclient" clone-depth="1" revision="refs/heads/int/p/fp2-prebuilts" />
   <project path="vendor/f-droid/privileged-extension" name="vendor/f-droid/privileged-extension" />
-  <project path="vendor/fairphone/apps/CameraSwapInfo" name="vendor/fairphone/apps/CameraSwapInfo" groups="fairphone" />
+  <project path="vendor/fairphone/apps/CameraSwapInfo" name="vendor/fairphone/apps/CameraSwapInfo" groups="fairphone" clone-depth="1" revision="refs/heads/int/p/fp2-prebuilts" />
   <project path="vendor/fairphone/apps/Checkup" name="vendor/fairphone/apps/Checkup" groups="fairphone" clone-depth="1" revision="refs/heads/int/p/fp2-prebuilts" />
   <project path="vendor/fairphone/apps/Hiccup" name="vendor/fairphone/apps/Hiccup" groups="fairphone" />
   <project path="vendor/fairphone/apps/Launcher" name="vendor/fairphone/apps/Launcher" groups="fairphone" />
