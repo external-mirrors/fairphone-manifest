@@ -413,7 +413,6 @@
   <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="aosp,pdk" />
   <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" groups="aosp,pdk" />
   <project path="hardware/lineage/interfaces" name="hardware/lineage/interfaces" groups="lineage" />
-  <project path="hardware/lineage/telephony" name="hardware/lineage/telephony" groups="lineage" />
   <project path="hardware/nxp/nfc" name="platform/hardware/nxp/nfc" groups="aosp,pdk" />
   <project path="hardware/nxp/secure_element" name="platform/hardware/nxp/secure_element" groups="aosp,pdk" />
   <project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="qcom,qcom_audio,pdk-qcom,lineage" />
