@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
+  <remote  name="origin"
            fetch=".."
-           review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-security-12.0.0_r38"
-           remote="aosp"
+           review="review.fairphone.software" />
+  <default revision="refs/heads/int/12/fp3"
+           remote="origin"
            sync-j="4" />
-
-  <superproject name="platform/superproject" remote="aosp" revision="android-security-12.0.0_r38" />
-  <contactinfo bugurl="go/repo-bug" />
 
   <project path="build/make" name="platform/build" groups="aosp,pdk" >
     <copyfile src="core/root.mk" dest="Makefile" />
