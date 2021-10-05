@@ -428,7 +428,7 @@
   <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="qcom_wlan,pdk-qcom,lineage" />
   <project path="hardware/ril" name="platform/hardware/ril" groups="aosp,pdk" />
   <project path="kernel/configs" name="kernel/configs" groups="aosp,vts,pdk" />
-  <project path="kernel/msm8974" name="kernel/msm" />
+  <project path="kernel/msm8974" name="kernel/msm" revision="refs/heads/int/p/fp2-lineagerebase" />
   <project path="kernel/tests" name="kernel/tests" groups="aosp" />
   <project path="libcore" name="platform/libcore" groups="aosp,pdk" />
   <project path="libnativehelper" name="platform/libnativehelper" groups="aosp,pdk" />
