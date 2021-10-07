@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote fetch=".." name="origin" />
+    <default remote="origin" revision="kernel/11/fp4" />
+
+    <project path="kernel/msm-4.19" name="kernel/msm-4.19"/>
+    <project path="kernel/msm-4.19/techpack/audio" name="platform/vendor/opensource/audio-kernel" />
+    <project path="kernel/msm-4.19/techpack/camera" name="platform/vendor/opensource/camera-kernel" />
+    <project path="kernel/msm-4.19/techpack/data" name="platform/vendor/qcom-opensource/data-kernel" />
+    <project path="kernel/msm-4.19/techpack/display" name="platform/vendor/opensource/display-drivers" />
+    <project path="kernel/msm-4.19/techpack/video" name="platform/vendor/opensource/video-driver" />
+    <project path="kernel/msm-4.19/drivers/staging/wlan-qc/fw-api" name="platform/vendor/qcom-opensource/wlan/fw-api" />
+    <project path="kernel/msm-4.19/drivers/staging/wlan-qc/qca-wifi-host-cmn" name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" />
+    <project path="kernel/msm-4.19/drivers/staging/wlan-qc/qcacld-3.0" name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" />
+</manifest>
