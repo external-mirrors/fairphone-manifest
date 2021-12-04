@@ -733,12 +733,6 @@
     <linkfile src="nfc_system_product.mk" dest="vendor/qcom/defs/product-defs/system/nfc-system-product.mk"/>
   </project>
   <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio"/>
-  <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth"/>
-  <project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/bluetooth">
-    <linkfile src="bt-system-qssi-board.mk" dest="vendor/qcom/defs/board-defs/system/bt-system-qssi-board.mk"/>
-    <linkfile src="bt-system-opensource-product.mk" dest="vendor/qcom/defs/product-defs/system/bt-system-opensource-product.mk"/>
-  </project>
-  <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext"/>
   <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils">
     <linkfile src="build/QSSI_violators.mk" dest="vendor/qcom/build/tasks/QSSI_violators.mk"/>
     <linkfile src="build/QMAA_enforcement.mk" dest="vendor/qcom/build/tasks/QMAA_enforcement.mk"/>
@@ -756,8 +750,6 @@
   </project>
   <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm"/>
   <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces"/>
-  <project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth"/>
-  <project name="platform/vendor/qcom-opensource/system/bt" path="vendor/qcom/opensource/commonsys/system/bt"/>
   <project name="platform/vendor/qcom-opensource/wfd-commonsys" path="vendor/qcom/opensource/commonsys-intf/wfd"/>
   <project name="toolchain/pgo-profiles"/>
   <project name="tools/platform-compat"/>
