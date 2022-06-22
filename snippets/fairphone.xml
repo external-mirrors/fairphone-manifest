@@ -8,6 +8,7 @@
 
   <project path="vendor/fairphone/common" name="vendor/fairphone/common" groups="fairphone" />
   <project path="vendor/fairphone/media" name="vendor/fairphone/media" groups="fairphone" />
+  <project path="vendor/fairphone/tools" name="vendor/fairphone/tools" groups="fairphone" revision="refs/heads/main" />
 
   <project path="vendor/st" name="platform/vendor/st" groups="fairphone" />
 </manifest>
