@@ -10,6 +10,7 @@
   <!-- Vendor projects -->
 
   <project path="vendor/fairphone/fp4" name="vendor/fairphone/fp4" groups="fairphone" />
+  <project path="vendor/fairphone/tools" name="vendor/fairphone/tools" groups="fairphone" revision="refs/heads/main" />
 
   <project path="vendor/st" name="platform/vendor/st" groups="fairphone" />
 </manifest>
