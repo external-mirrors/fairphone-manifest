@@ -16,5 +16,6 @@
   <project path="vendor/fairphone/fp3" name="vendor/fairphone/fp3" groups="fairphone" />
   <project path="vendor/fairphone/fp3-common" name="vendor/fairphone/fp3-common" groups="fairphone" />
   <project path="vendor/fairphone/media" name="vendor/fairphone/media" groups="fairphone" />
+  <project path="vendor/fairphone/tools" name="vendor/fairphone/tools" groups="fairphone" revision="refs/heads/main" />
 
 </manifest>
