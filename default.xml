@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="origin" fetch=".." />
+  <default revision="refs/heads/int/11/fp3" remote="origin" sync-j="4" />
+  <project groups="aosp-android11-release,pdk" name="platform/build" path="build/make" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project groups="aosp-android11-release,pdk,tradefed" name="platform/build/blueprint" path="build/blueprint" />
+  <project groups="aosp-android11-release,pdk,tradefed,cyborg" name="platform/build/soong" path="build/soong" >
+    <linkfile dest="Android.bp" src="root.bp" />
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
+  </project>
+  <project groups="aosp-android11-release,pdk" name="platform/art" path="art" />
+  <project groups="aosp-android11-release,pdk" name="platform/bionic" path="bionic" />
+  <project name="kernel/lk" path="bootable/bootloader/lk" />
+  <project groups="aosp-android11-release,pdk" name="platform/bootable/recovery" path="bootable/recovery" />
+  <project groups="aosp-android11-release,pdk" name="platform/compatibility/cdd" path="compatibility/cdd" />
+  <project groups="aosp-android11-release,cts,pdk-cw-fs,pdk-fs" name="platform/cts" path="cts" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/dalvik" path="dalvik" />
+  <project groups="aosp-android11-release,developers,pdk" name="platform/developers/build" path="developers/build" />
+  <project groups="aosp-android11-release,developers,pdk-cw-fs,pdk-fs" name="platform/development" path="development" />
+  <project groups="aosp-android11-release,pdk,pdk-cw-fs" name="device/common" />
+  <project path="device/fairphone/FP3" name="device/fairphone/fp3" groups="fairphone" />
+  <project path="device/fairphone/fp3-common" name="device/fairphone/fp3-common" groups="fairphone" />
+  <project path="device/fairphone/fp3-sibon" name="device/fairphone/fp3-sibon" groups="fairphone" />
+  <project groups="aosp-android11-release,pdk" name="device/generic/arm64" />
+  <project groups="aosp-android11-release,pdk" name="device/generic/common" />
+  <project name="device/qcom/common" >
+    <linkfile dest="kernel/Android.mk" src="stop_scan.mk" />
+  </project>
+  <project name="device/qcom/qssi" />
+  <project name="device/qcom/sepolicy" />
+  <project groups="aosp-android11-release,pdk" name="device/sample" />
+  <project path="external/aac" name="platform/external/aac" groups="aosp-android11-release,pdk" />
+  <project path="external/adeb" name="platform/external/adeb" groups="aosp-android11-release,pdk" />
+  <project path="external/adhd" name="platform/external/adhd" groups="aosp-android11-release,pdk" />
+  <project path="external/android-clat" name="platform/external/android-clat" groups="aosp-android11-release,pdk" />
+  <project path="external/androidplot" name="platform/external/androidplot" groups="aosp-android11-release,pdk" />
+  <project path="external/angle" name="platform/external/angle" groups="aosp-android11-release,pdk" />
+  <project path="external/ant-glob" name="platform/external/ant-glob" groups="aosp-android11-release,pdk" />
+  <project name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" />
+  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" />
+  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" />
+  <project name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" />
+  <project path="external/antlr" name="platform/external/antlr" groups="aosp-android11-release,pdk" />
+  <project path="external/apache-commons-bcel" name="platform/external/apache-commons-bcel" groups="aosp-android11-release,pdk" />
+  <project path="external/apache-commons-compress" name="platform/external/apache-commons-compress" groups="aosp-android11-release,pdk" />
+  <project path="external/apache-commons-math" name="platform/external/apache-commons-math" groups="aosp-android11-release,pdk" />
+  <project path="external/apache-harmony" name="platform/external/apache-harmony" groups="aosp-android11-release,pdk" />
+  <project path="external/apache-http" name="platform/external/apache-http" groups="aosp-android11-release,pdk" />
+  <project path="external/apache-xml" name="platform/external/apache-xml" groups="aosp-android11-release,pdk" />
+  <project path="external/arm-optimized-routines" name="platform/external/arm-optimized-routines" groups="aosp-android11-release,pdk" />
+  <project path="external/arm-trusted-firmware" name="platform/external/arm-trusted-firmware" groups="aosp-android11-release,pdk" />
+  <project path="external/autotest" name="platform/external/autotest" groups="pdk-fs" />
+  <project path="external/avb" name="platform/external/avb" groups="aosp-android11-release,pdk" />
+  <project path="external/bc" name="platform/external/bc" groups="aosp-android11-release,pdk" />
+  <project path="external/bcc" name="platform/external/bcc" groups="aosp-android11-release,pdk" />
+  <project path="external/blktrace" name="platform/external/blktrace" groups="aosp-android11-release,pdk" />
+  <project path="external/boringssl" name="platform/external/boringssl" groups="aosp-android11-release,pdk" />
+  <project path="external/bouncycastle" name="platform/external/bouncycastle" groups="aosp-android11-release,pdk" />
+  <project path="external/brotli" name="platform/external/brotli" groups="aosp-android11-release,pdk" />
+  <project path="external/bsdiff" name="platform/external/bsdiff" groups="aosp-android11-release,pdk" />
+  <project path="external/bzip2" name="platform/external/bzip2" groups="aosp-android11-release,pdk" />
+  <project path="external/caliper" name="platform/external/caliper" groups="aosp-android11-release,pdk" />
+  <project path="external/capstone" name="platform/external/capstone" groups="aosp-android11-release,pdk" />
+  <project path="external/catch2" name="platform/external/catch2" groups="aosp-android11-release,pdk" />
+  <project path="external/cblas" name="platform/external/cblas" groups="aosp-android11-release,pdk" />
+  <project path="external/cbor-java" name="platform/external/cbor-java" groups="aosp-android11-release,pdk" />
+  <project path="external/chromium-libpac" name="platform/external/chromium-libpac" groups="aosp-android11-release,pdk" />
+  <project path="external/chromium-trace" name="platform/external/chromium-trace" groups="aosp-android11-release,pdk" />
+  <project path="external/chromium-webview" name="platform/external/chromium-webview" groups="aosp-android11-release,pdk" clone-depth="1" />
+  <project path="external/clang" name="platform/external/clang" groups="aosp-android11-release,pdk" />
+  <project path="external/cldr" name="platform/external/cldr" groups="aosp-android11-release,pdk" />
+  <project path="external/cn-cbor" name="platform/external/cn-cbor" groups="aosp-android11-release,pdk" />
+  <project path="external/compiler-rt" name="platform/external/compiler-rt" groups="aosp-android11-release,pdk" />
+  <project path="external/conscrypt" name="platform/external/conscrypt" groups="aosp-android11-release,pdk" />
+  <project path="external/cpu_features" name="platform/external/cpu_features" groups="aosp-android11-release,pdk" />
+  <project path="external/cpuinfo" name="platform/external/cpuinfo" groups="aosp-android11-release,pdk" />
+  <project path="external/crcalc" name="platform/external/crcalc" groups="aosp-android11-release,pdk" />
+  <project path="external/cros/system_api" name="platform/external/cros/system_api" groups="aosp-android11-release,pdk" />
+  <project path="external/crosvm" name="platform/external/crosvm" groups="aosp-android11-release,pdk" />
+  <project path="external/curl" name="platform/external/curl" groups="aosp-android11-release,pdk" />
+  <project path="external/dagger2" name="platform/external/dagger2" groups="aosp-android11-release,pdk" />
+  <project path="external/deqp" name="platform/external/deqp" groups="pdk-fs" />
+  <project path="external/deqp-deps/SPIRV-Headers" name="platform/external/deqp-deps/SPIRV-Headers" groups="pdk-fs" />
+  <project path="external/deqp-deps/SPIRV-Tools" name="platform/external/deqp-deps/SPIRV-Tools" groups="pdk-fs" />
+  <project path="external/deqp-deps/glslang" name="platform/external/deqp-deps/glslang" groups="pdk-fs" />
+  <project path="external/deqp-deps/amber" name="platform/external/deqp-deps/amber" groups="pdk-fs" />
+  <project path="external/desugar" name="platform/external/desugar" groups="aosp-android11-release,pdk" />
+  <project path="external/dexmaker" name="platform/external/dexmaker" groups="aosp-android11-release,pdk" />
+  <project path="external/dlmalloc" name="platform/external/dlmalloc" groups="aosp-android11-release,pdk" />
+  <project path="external/dng_sdk" name="platform/external/dng_sdk" groups="aosp-android11-release,pdk" />
+  <project path="external/dnsmasq" name="platform/external/dnsmasq" groups="aosp-android11-release,pdk" />
+  <project path="external/doclava" name="platform/external/doclava" groups="aosp-android11-release,pdk" />
+  <project path="external/dokka" name="platform/external/dokka" groups="aosp-android11-release,pdk" />
+  <project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" groups="drm_hwcomposer,pdk-fs" />
+  <project path="external/drrickorang" name="platform/external/drrickorang" groups="aosp-android11-release,pdk" />
+  <project path="external/dtc" name="platform/external/dtc" groups="aosp-android11-release,pdk" />
+  <project path="external/dynamic_depth" name="platform/external/dynamic_depth" groups="aosp-android11-release,pdk" />
+  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" groups="aosp-android11-release,pdk" />
+  <project path="external/easymock" name="platform/external/easymock" groups="aosp-android11-release,pdk" />
+  <project path="external/eigen" name="platform/external/eigen" groups="aosp-android11-release,pdk" />
+  <project path="external/elfutils" name="platform/external/elfutils" groups="aosp-android11-release,pdk" />
+  <project path="external/emma" name="platform/external/emma" groups="aosp-android11-release,pdk" />
+  <project path="external/error_prone" name="platform/external/error_prone" groups="aosp-android11-release,pdk" />
+  <project path="external/ethtool" name="platform/external/ethtool" groups="aosp-android11-release,pdk" />
+  <project path="external/exoplayer" name="platform/external/exoplayer" groups="aosp-android11-release,pdk" />
+  <project path="external/expat" name="platform/external/expat" groups="aosp-android11-release,pdk" />
+  <project path="external/f2fs-tools" name="platform/external/f2fs-tools" groups="aosp-android11-release,pdk" />
+  <project path="external/fastrpc" name="platform/external/fastrpc" groups="aosp-android11-release,pdk" />
+  <project path="external/fdlibm" name="platform/external/fdlibm" groups="aosp-android11-release,pdk" />
+  <project path="external/fec" name="platform/external/fec" groups="aosp-android11-release,pdk" />
+  <project path="external/flac" name="platform/external/flac" groups="aosp-android11-release,pdk" />
+  <project path="external/flatbuffers" name="platform/external/flatbuffers" groups="aosp-android11-release,pdk" />
+  <project path="external/fonttools" name="platform/external/fonttools" groups="aosp-android11-release,pdk" />
+  <project path="external/fmtlib" name="platform/external/fmtlib" groups="aosp-android11-release,pdk" />
+  <project path="external/freetype" name="platform/external/freetype" groups="aosp-android11-release,pdk" />
+  <project path="external/fsck_msdos" name="platform/external/fsck_msdos" groups="aosp-android11-release,pdk" />
+  <project path="external/fsverity-utils" name="platform/external/fsverity-utils" groups="aosp-android11-release,pdk" />
+  <project path="external/FP16" name="platform/external/FP16" groups="aosp-android11-release,pdk" />
+  <project path="external/FXdiv" name="platform/external/FXdiv" groups="aosp-android11-release,pdk" />
+  <project path="external/gemmlowp" name="platform/external/gemmlowp" groups="aosp-android11-release,pdk" />
+  <project path="external/gflags" name="platform/external/gflags" groups="aosp-android11-release,pdk" />
+  <project path="external/giflib" name="platform/external/giflib" groups="pdk,qcom_msm8x26" />
+  <project path="external/glide" name="platform/external/glide" groups="aosp-android11-release,pdk" />
+  <project path="external/golang-protobuf" name="platform/external/golang-protobuf" groups="aosp-android11-release,pdk" />
+  <project path="external/google-benchmark" name="platform/external/google-benchmark" groups="aosp-android11-release,pdk" />
+  <project path="external/google-breakpad" name="platform/external/google-breakpad" groups="pdk-fs" />
+  <project path="external/google-fonts/arbutus-slab" name="platform/external/google-fonts/arbutus-slab" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/barlow" name="platform/external/google-fonts/barlow" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/karla" name="platform/external/google-fonts/karla" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/lustria" name="platform/external/google-fonts/lustria" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/fraunces" name="platform/external/google-fonts/fraunces" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/big-shoulders-text" name="platform/external/google-fonts/big-shoulders-text" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/arvo" name="platform/external/google-fonts/arvo" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/carrois-gothic-sc" name="platform/external/google-fonts/carrois-gothic-sc" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/coming-soon" name="platform/external/google-fonts/coming-soon" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/cutive-mono" name="platform/external/google-fonts/cutive-mono" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/dancing-script" name="platform/external/google-fonts/dancing-script" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/lato" name="platform/external/google-fonts/lato" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/source-sans-pro" name="platform/external/google-fonts/source-sans-pro" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/rubik" name="platform/external/google-fonts/rubik" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fonts/zilla-slab" name="platform/external/google-fonts/zilla-slab" groups="aosp-android11-release,pdk" />
+  <project path="external/google-fruit" name="platform/external/google-fruit" groups="aosp-android11-release,pdk" />
+  <project path="external/google-styleguide" name="platform/external/google-styleguide" groups="aosp-android11-release,pdk" />
+  <project path="external/googletest" name="platform/external/googletest" groups="aosp-android11-release,pdk" />
+  <project path="external/gptfdisk" name="platform/external/gptfdisk" groups="aosp-android11-release,pdk" />
+  <project path="external/grpc-grpc" name="platform/external/grpc-grpc" groups="pdk,tradefed" />
+  <project path="external/grpc-grpc-java" name="platform/external/grpc-grpc-java" groups="pdk,tradefed" />
+  <project path="external/guava" name="platform/external/guava" groups="aosp-android11-release,pdk" />
+  <project path="external/guice" name="platform/external/guice" groups="aosp-android11-release,pdk" />
+  <project path="external/gwp_asan" name="platform/external/gwp_asan" groups="aosp-android11-release,pdk" />
+  <project path="external/hamcrest" name="platform/external/hamcrest" groups="aosp-android11-release,pdk" />
+  <project path="external/harfbuzz_ng" name="platform/external/harfbuzz_ng" groups="pdk,qcom_msm8x26" />
+  <project path="external/honggfuzz" name="platform/external/honggfuzz" groups="aosp-android11-release,pdk" />
+  <project path="external/hyphenation-patterns" name="platform/external/hyphenation-patterns" groups="aosp-android11-release,pdk" />
+  <project path="external/icu" name="platform/external/icu" groups="aosp-android11-release,pdk" />
+  <project path="external/igt-gpu-tools" name="platform/external/igt-gpu-tools" groups="aosp-android11-release,pdk" />
+  <project path="external/ImageMagick" name="platform/external/ImageMagick" groups="aosp-android11-release,pdk" />
+  <project path="external/image_io" name="platform/external/image_io" groups="aosp-android11-release,pdk" />
+  <project path="external/ims" name="platform/external/ims" groups="aosp-android11-release,pdk" />
+  <project path="external/iperf3" name="platform/external/iperf3" groups="aosp-android11-release,pdk" />
+  <project path="external/iproute2" name="platform/external/iproute2" groups="aosp-android11-release,pdk" />
+  <project path="external/ipsec-tools" name="platform/external/ipsec-tools" groups="aosp-android11-release,pdk" />
+  <project path="external/iptables" name="platform/external/iptables" groups="aosp-android11-release,pdk" />
+  <project path="external/iputils" name="platform/external/iputils" groups="aosp-android11-release,pdk" />
+  <project path="external/iw" name="platform/external/iw" groups="aosp-android11-release,pdk" />
+  <project path="external/jacoco" name="platform/external/jacoco" groups="aosp-android11-release,pdk" />
+  <project path="external/jarjar" name="platform/external/jarjar" groups="aosp-android11-release,pdk" />
+  <project path="external/javaparser" name="platform/external/javaparser" groups="aosp-android11-release,pdk" />
+  <project path="external/javapoet" name="platform/external/javapoet" groups="aosp-android11-release,pdk" />
+  <project path="external/javasqlite" name="platform/external/javasqlite" groups="aosp-android11-release,pdk" />
+  <project path="external/jcommander" name="platform/external/jcommander" groups="aosp-android11-release,pdk" />
+  <project path="external/jdiff" name="platform/external/jdiff" groups="aosp-android11-release,pdk" />
+  <project path="external/jemalloc" name="platform/external/jemalloc" groups="aosp-android11-release,pdk" />
+  <project path="external/jemalloc_new" name="platform/external/jemalloc_new" groups="aosp-android11-release,pdk" />
+  <project path="external/jline" name="platform/external/jline" groups="pdk,tradefed,pdk-fs" />
+  <project path="external/jsilver" name="platform/external/jsilver" groups="aosp-android11-release,pdk" />
+  <project path="external/jsmn" name="platform/external/jsmn" groups="aosp-android11-release,pdk" />
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/json-c" path="external/json-c" />
+  <project path="external/jsoncpp" name="platform/external/jsoncpp" groups="aosp-android11-release,pdk" />
+  <project path="external/jsr305" name="platform/external/jsr305" groups="aosp-android11-release,pdk" />
+  <project path="external/jsr330" name="platform/external/jsr330" groups="aosp-android11-release,pdk" />
+  <project path="external/junit" name="platform/external/junit" groups="aosp-android11-release,pdk" />
+  <project path="external/junit-params" name="platform/external/junit-params" groups="aosp-android11-release,pdk" />
+  <project path="external/kernel-headers" name="platform/external/kernel-headers" groups="aosp-android11-release,pdk" />
+  <project path="external/kmod" name="platform/external/kmod" groups="aosp-android11-release,pdk" />
+  <project path="external/kotlinc" name="platform/external/kotlinc" groups="aosp-android11-release,pdk" />
+  <project path="external/kotlinx.coroutines" name="platform/external/kotlinx.coroutines" groups="aosp-android11-release,pdk" />
+  <project path="external/ksoap2" name="platform/external/ksoap2" groups="aosp-android11-release,pdk" />
+  <project path="external/libaom" name="platform/external/libaom" groups="aosp-android11-release,pdk" />
+  <project path="external/libavc" name="platform/external/libavc" groups="aosp-android11-release,pdk" />
+  <project path="external/libbackup" name="platform/external/libbackup" groups="aosp-android11-release,pdk" />
+  <project path="external/libbrillo" name="platform/external/libbrillo" groups="aosp-android11-release,pdk" />
+  <project path="external/libcap" name="platform/external/libcap" groups="aosp-android11-release,pdk" />
+  <project path="external/libcap-ng" name="platform/external/libcap-ng" groups="aosp-android11-release,pdk" />
+  <project path="external/libchrome" name="platform/external/libchrome" groups="aosp-android11-release,pdk" />
+  <project path="external/libcups" name="platform/external/libcups" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/libcxx" name="platform/external/libcxx" groups="aosp-android11-release,pdk" />
+  <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="aosp-android11-release,pdk" />
+  <project path="external/libdaemon" name="platform/external/libdaemon" groups="aosp-android11-release,pdk" />
+  <project path="external/libdivsufsort" name="platform/external/libdivsufsort" groups="aosp-android11-release,pdk" />
+  <project path="external/libdrm" name="platform/external/libdrm" groups="aosp-android11-release,pdk" />
+  <project path="external/libepoxy" name="platform/external/libepoxy" groups="aosp-android11-release,pdk" />
+  <project path="external/libese" name="platform/external/libese" groups="aosp-android11-release,pdk" />
+  <project path="external/libevent" name="platform/external/libevent" groups="aosp-android11-release,pdk" />
+  <project path="external/libexif" name="platform/external/libexif" groups="aosp-android11-release,pdk" />
+  <project path="external/libffi" name="platform/external/libffi" groups="aosp-android11-release,pdk" />
+  <project path="external/libgav1" name="platform/external/libgav1" groups="aosp-android11-release,pdk" />
+  <project path="external/libfuse" name="platform/external/libfuse" groups="aosp-android11-release,pdk" />
+  <project path="external/libgsm" name="platform/external/libgsm" groups="aosp-android11-release,pdk" />
+  <project path="external/libhevc" name="platform/external/libhevc" groups="aosp-android11-release,pdk" />
+  <project path="external/libiio" name="platform/external/libiio" groups="aosp-android11-release,pdk" />
+  <project path="external/libjpeg-turbo" name="platform/external/libjpeg-turbo" groups="aosp-android11-release,pdk" />
+  <project path="external/libkmsxx" name="platform/external/libkmsxx" groups="aosp-android11-release,pdk" />
+  <project path="external/libldac" name="platform/external/libldac" groups="aosp-android11-release,pdk" />
+  <project path="external/libmpeg2" name="platform/external/libmpeg2" groups="aosp-android11-release,pdk" />
+  <project path="external/libnetfilter_conntrack" name="platform/external/libnetfilter_conntrack" groups="aosp-android11-release,pdk" />
+  <project path="external/libnfnetlink" name="platform/external/libnfnetlink" groups="aosp-android11-release,pdk" />
+  <project path="external/libnl" name="platform/external/libnl" groups="aosp-android11-release,pdk" />
+  <project path="external/libogg" name="platform/external/libogg" groups="aosp-android11-release,pdk" />
+  <project path="external/libopus" name="platform/external/libopus" groups="aosp-android11-release,pdk" />
+  <project path="external/libpcap" name="platform/external/libpcap" groups="aosp-android11-release,pdk" />
+  <project path="external/libphonenumber" name="platform/external/libphonenumber" groups="aosp-android11-release,pdk" />
+  <project path="external/libpng" name="platform/external/libpng" groups="aosp-android11-release,pdk" />
+  <project path="external/libprotobuf-mutator" name="platform/external/libprotobuf-mutator" groups="aosp-android11-release,pdk" />
+  <project path="external/libsrtp2" name="platform/external/libsrtp2" groups="aosp-android11-release,pdk" />
+  <project path="external/libtextclassifier" name="platform/external/libtextclassifier" groups="aosp-android11-release,pdk" />
+  <project path="external/libunwind" name="platform/external/libunwind" groups="aosp-android11-release,pdk" />
+  <project path="external/libunwind_llvm" name="platform/external/libunwind_llvm" groups="aosp-android11-release,pdk" />
+  <project path="external/libusb" name="platform/external/libusb" groups="aosp-android11-release,pdk" />
+  <project path="external/libutf" name="platform/external/libutf" groups="aosp-android11-release,pdk" />
+  <project path="external/libvpx" name="platform/external/libvpx" groups="aosp-android11-release,pdk" />
+  <project path="external/libvterm" name="platform/external/libvterm" groups="aosp-android11-release,pdk" />
+  <project path="external/libxaac" name="platform/external/libxaac" groups="aosp-android11-release,pdk" />
+  <project path="external/libxkbcommon" name="platform/external/libxkbcommon" groups="aosp-android11-release,pdk" />
+  <project path="external/libxml2" name="platform/external/libxml2" groups="pdk,libxml2" />
+  <project path="external/libyuv" name="platform/external/libyuv" groups="pdk,libyuv" />
+  <project path="external/linux-kselftest" name="platform/external/linux-kselftest" groups="vts,pdk" clone-depth="1" />
+  <project path="external/llvm" name="platform/external/llvm" groups="aosp-android11-release,pdk" />
+  <project path="external/lmfit" name="platform/external/lmfit" groups="aosp-android11-release,pdk" />
+  <project path="external/lua" name="platform/external/lua" groups="aosp-android11-release,pdk" />
+  <project path="external/ltp" name="platform/external/ltp" groups="vts,pdk" />
+  <project path="external/lz4" name="platform/external/lz4" groups="aosp-android11-release,pdk" />
+  <project path="external/lzma" name="platform/external/lzma" groups="aosp-android11-release,pdk" />
+  <project path="external/markdown" name="platform/external/markdown" groups="aosp-android11-release,pdk" />
+  <project path="external/mdnsresponder" name="platform/external/mdnsresponder" groups="aosp-android11-release,pdk" />
+  <project path="external/mesa3d" name="platform/external/mesa3d" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/mime-support" name="platform/external/mime-support" groups="aosp-android11-release,pdk" />
+  <project path="external/minigbm" name="platform/external/minigbm" groups="aosp-android11-release,pdk" />
+  <project path="external/minijail" name="platform/external/minijail" groups="aosp-android11-release,pdk" />
+  <project path="external/mksh" name="platform/external/mksh" groups="aosp-android11-release,pdk" />
+  <project path="external/mockftpserver" name="platform/external/mockftpserver" groups="aosp-android11-release,pdk" />
+  <project path="external/mockito" name="platform/external/mockito" groups="aosp-android11-release,pdk" />
+  <project path="external/mockwebserver" name="platform/external/mockwebserver" groups="aosp-android11-release,pdk" />
+  <project path="external/modp_b64" name="platform/external/modp_b64" groups="aosp-android11-release,pdk" />
+  <project path="external/mp4parser" name="platform/external/mp4parser" groups="aosp-android11-release,pdk" />
+  <project path="external/mtpd" name="platform/external/mtpd" groups="aosp-android11-release,pdk" />
+  <project path="external/nanohttpd" name="platform/external/nanohttpd" groups="aosp-android11-release,pdk" />
+  <project path="external/nanopb-c" name="platform/external/nanopb-c" groups="aosp-android11-release,pdk" />
+  <project path="external/naver-fonts" name="platform/external/naver-fonts" groups="aosp-android11-release,pdk" />
+  <project path="external/neon_2_sse" name="platform/external/neon_2_sse" groups="aosp-android11-release,pdk" />
+  <project path="external/neven" name="platform/external/neven" groups="aosp-android11-release,pdk" />
+  <project path="external/newfs_msdos" name="platform/external/newfs_msdos" groups="aosp-android11-release,pdk" />
+  <project path="external/nfacct" name="platform/external/nfacct" groups="aosp-android11-release,pdk" />
+  <project path="external/nist-pkits" name="platform/external/nist-pkits" groups="aosp-android11-release,pdk" />
+  <project path="external/nist-sip" name="platform/external/nist-sip" groups="aosp-android11-release,pdk" />
+  <project path="external/nos/host/generic" name="platform/external/nos/host/generic" groups="aosp-android11-release,pdk" />
+  <project path="external/noto-fonts" name="platform/external/noto-fonts" groups="aosp-android11-release,pdk" />
+  <project path="external/oauth" name="platform/external/oauth" groups="aosp-android11-release,pdk" />
+  <project path="external/objenesis" name="platform/external/objenesis" groups="aosp-android11-release,pdk" />
+  <project path="external/oj-libjdwp" name="platform/external/oj-libjdwp" groups="aosp-android11-release,pdk" />
+  <project path="external/okhttp" name="platform/external/okhttp" groups="aosp-android11-release,pdk" />
+  <project path="external/one-true-awk" name="platform/external/one-true-awk" groups="aosp-android11-release,pdk" />
+  <project path="external/opencensus-java" name="platform/external/opencensus-java" groups="pdk,tradefed" />
+  <project path="external/OpenCSD" name="platform/external/OpenCSD" groups="aosp-android11-release,pdk" />
+  <project path="external/openssh" name="platform/external/openssh" groups="aosp-android11-release,pdk" />
+  <project path="external/oss-fuzz" name="platform/external/oss-fuzz" groups="aosp-android11-release,pdk" />
+  <project path="external/owasp/sanitizer" name="platform/external/owasp/sanitizer" groups="aosp-android11-release,pdk" />
+  <project path="external/parameter-framework" name="platform/external/parameter-framework" groups="aosp-android11-release,pdk" />
+  <project path="external/pcre" name="platform/external/pcre" groups="aosp-android11-release,pdk" />
+  <project path="external/pdfium" name="platform/external/pdfium" groups="aosp-android11-release,pdk" />
+  <project path="external/perfetto" name="platform/external/perfetto" groups="aosp-android11-release,pdk" />
+  <project path="external/piex" name="platform/external/piex" groups="aosp-android11-release,pdk" />
+  <project path="external/ply" name="platform/external/ply" groups="aosp-android11-release,pdk" />
+  <project path="external/ppp" name="platform/external/ppp" groups="aosp-android11-release,pdk" />
+  <project path="external/proguard" name="platform/external/proguard" groups="aosp-android11-release,pdk" />
+  <project path="external/protobuf" name="platform/external/protobuf" groups="aosp-android11-release,pdk" />
+  <project path="external/psimd" name="platform/external/psimd" groups="aosp-android11-release,pdk" />
+  <project path="external/pthreadpool" name="platform/external/pthreadpool" groups="aosp-android11-release,pdk" />
+  <project path="external/puffin" name="platform/external/puffin" groups="aosp-android11-release,pdk" />
+  <project path="external/python/apitools" name="platform/external/python/apitools" groups="aosp-android11-release,pdk" />
+  <project path="external/python/asn1crypto" name="platform/external/python/asn1crypto" groups="aosp-android11-release,pdk" />
+  <project path="external/python/cffi" name="platform/external/python/cffi" groups="aosp-android11-release,pdk" />
+  <project path="external/python/cpython2" name="platform/external/python/cpython2" groups="aosp-android11-release,pdk" />
+  <project path="external/python/cpython3" name="platform/external/python/cpython3" groups="aosp-android11-release,pdk" />
+  <project path="external/python/cryptography" name="platform/external/python/cryptography" groups="aosp-android11-release,pdk" />
+  <project path="external/python/dateutil" name="platform/external/python/dateutil" groups="aosp-android11-release,pdk" />
+  <project path="external/python/enum34" name="platform/external/python/enum34" groups="vts,pdk" />
+  <project path="external/python/funcsigs" name="platform/external/python/funcsigs" groups="aosp-android11-release,pdk" />
+  <project path="external/python/futures" name="platform/external/python/futures" groups="vts,pdk" />
+  <project path="external/python/google-api-python-client" name="platform/external/python/google-api-python-client" groups="vts,pdk" />
+  <project path="external/python/httplib2" name="platform/external/python/httplib2" groups="vts,pdk" />
+  <project path="external/python/ipaddress" name="platform/external/python/ipaddress" groups="aosp-android11-release,pdk" />
+  <project path="external/python/mock" name="platform/external/python/mock" groups="aosp-android11-release,pdk" />
+  <project path="external/python/oauth2client" name="platform/external/python/oauth2client" groups="vts,pdk" />
+  <project path="external/python/parse_type" name="platform/external/python/parse_type" groups="vts,pdk" />
+  <project path="external/python/pyasn1" name="platform/external/python/pyasn1" groups="vts,pdk" />
+  <project path="external/python/pyasn1-modules" name="platform/external/python/pyasn1-modules" groups="vts,pdk" />
+  <project path="external/python/pybind11" name="platform/external/python/pybind11" groups="aosp-android11-release,pdk" />
+  <project path="external/python/pycparser" name="platform/external/python/pycparser" groups="aosp-android11-release,pdk" />
+  <project path="external/python/pyopenssl" name="platform/external/python/pyopenssl" groups="aosp-android11-release,pdk" />
+  <project path="external/python/rsa" name="platform/external/python/rsa" groups="vts,pdk" />
+  <project path="external/python/setuptools" name="platform/external/python/setuptools" groups="vts,pdk" />
+  <project path="external/python/six" name="platform/external/python/six" groups="vts,pdk" />
+  <project path="external/python/uritemplates" name="platform/external/python/uritemplates" groups="vts,pdk" />
+  <project path="external/rappor" name="platform/external/rappor" groups="aosp-android11-release,pdk" />
+  <project path="external/replicaisland" name="platform/external/replicaisland" groups="aosp-android11-release,pdk" />
+  <project path="external/rmi4utils" name="platform/external/rmi4utils" groups="aosp-android11-release,pdk" />
+  <project path="external/robolectric-shadows" name="platform/external/robolectric-shadows" groups="pdk-cw-fs,pdk-fs" />
+  <project path="external/roboto-fonts" name="platform/external/roboto-fonts" groups="aosp-android11-release,pdk" />
+  <project path="external/rootdev" name="platform/external/rootdev" groups="aosp-android11-release,pdk" />
+  <project path="external/Reactive-Extensions/RxCpp" name="platform/external/Reactive-Extensions/RxCpp" groups="aosp-android11-release,pdk" />
+  <project path="external/rust/crates/byteorder" name="platform/external/rust/crates/byteorder" groups="aosp-android11-release,pdk" />
+  <project path="external/rust/crates/libc" name="platform/external/rust/crates/libc" groups="aosp-android11-release,pdk" />
+  <project path="external/rust/crates/proc-macro2" name="platform/external/rust/crates/proc-macro2" groups="aosp-android11-release,pdk" />
+  <project path="external/rust/crates/quote" name="platform/external/rust/crates/quote" groups="aosp-android11-release,pdk" />
+  <project path="external/rust/crates/remain" name="platform/external/rust/crates/remain" groups="aosp-android11-release,pdk" />
+  <project path="external/rust/crates/syn" name="platform/external/rust/crates/syn" groups="aosp-android11-release,pdk" />
+  <project path="external/rust/crates/unicode-xid" name="platform/external/rust/crates/unicode-xid" groups="aosp-android11-release,pdk" />
+  <project path="external/scapy" name="platform/external/scapy" groups="pdk-fs" />
+  <project path="external/scrypt" name="platform/external/scrypt" groups="aosp-android11-release,pdk" />
+  <project path="external/scudo" name="platform/external/scudo" groups="aosp-android11-release,pdk" />
+  <project path="external/seccomp-tests" name="platform/external/seccomp-tests" groups="aosp-android11-release,pdk" />
+  <project path="external/selinux" name="platform/external/selinux" groups="aosp-android11-release,pdk" />
+  <project path="external/setupcompat" name="platform/external/setupcompat" groups="aosp-android11-release,pdk" />
+  <project path="external/setupdesign" name="platform/external/setupdesign" groups="aosp-android11-release,pdk" />
+  <project path="external/sfntly" name="platform/external/sfntly" groups="pdk,qcom_msm8x26" />
+  <project path="external/shaderc/spirv-headers" name="platform/external/shaderc/spirv-headers" groups="aosp-android11-release,pdk" />
+  <project path="external/shflags" name="platform/external/shflags" groups="aosp-android11-release,pdk" />
+  <project path="external/skia" name="platform/external/skia" groups="pdk,qcom_msm8x26" />
+  <project path="external/skqp" name="platform/external/skqp" groups="cts,pdk" clone-depth="1" />
+  <project path="external/sl4a" name="platform/external/sl4a" groups="aosp-android11-release,pdk" />
+  <project path="external/slf4j" name="platform/external/slf4j" groups="aosp-android11-release,pdk" />
+  <project path="external/smali" name="platform/external/smali" groups="aosp-android11-release,pdk" />
+  <project path="external/snakeyaml" name="platform/external/snakeyaml" groups="aosp-android11-release,pdk" />
+  <project path="external/sonic" name="platform/external/sonic" groups="aosp-android11-release,pdk" />
+  <project path="external/sonivox" name="platform/external/sonivox" groups="aosp-android11-release,pdk" />
+  <project path="external/speex" name="platform/external/speex" groups="aosp-android11-release,pdk" />
+  <project path="external/sqlite" name="platform/external/sqlite" groups="aosp-android11-release,pdk" />
+  <project path="external/squashfs-tools" name="platform/external/squashfs-tools" groups="aosp-android11-release,pdk" />
+  <project path="external/strace" name="platform/external/strace" groups="aosp-android11-release,pdk" />
+  <project path="external/stressapptest" name="platform/external/stressapptest" groups="aosp-android11-release,pdk" />
+  <project path="external/subsampling-scale-image-view" name="platform/external/subsampling-scale-image-view" groups="aosp-android11-release,pdk" clone-depth="1" />
+  <project path="external/swiftshader" name="platform/external/swiftshader" groups="aosp-android11-release,pdk" />
+  <project path="external/tagsoup" name="platform/external/tagsoup" groups="aosp-android11-release,pdk" />
+  <project path="external/tcpdump" name="platform/external/tcpdump" groups="aosp-android11-release,pdk" />
+  <project path="external/tensorflow" name="platform/external/tensorflow" groups="aosp-android11-release,pdk" />
+  <project path="external/testng" name="platform/external/testng" groups="aosp-android11-release,pdk" />
+  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="aosp-android11-release,pdk" />
+  <project path="external/tinycompress" name="platform/external/tinycompress" groups="aosp-android11-release,pdk" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="aosp-android11-release,pdk" />
+  <project path="external/tinyxml2" name="platform/external/tinyxml2" groups="aosp-android11-release,pdk" />
+  <project path="external/toybox" name="platform/external/toybox" groups="aosp-android11-release,pdk" />
+  <project path="external/tremolo" name="platform/external/tremolo" groups="aosp-android11-release,pdk" />
+  <project path="external/turbine" name="platform/external/turbine" groups="aosp-android11-release,pdk" />
+  <project path="external/u-boot" name="platform/external/u-boot" groups="aosp-android11-release,pdk" />
+  <project path="external/unicode" name="platform/external/unicode" groups="aosp-android11-release,pdk" />
+  <project path="external/ukey2" name="platform/external/ukey2" groups="aosp-android11-release,pdk" />
+  <project path="external/v4l2_codec2" name="platform/external/v4l2_codec2" groups="aosp-android11-release,pdk" />
+  <project path="external/v8" name="platform/external/v8" groups="aosp-android11-release,pdk" />
+  <project path="external/vboot_reference" name="platform/external/vboot_reference" groups="vboot,pdk-fs" />
+  <project path="external/virglrenderer" name="platform/external/virglrenderer" groups="aosp-android11-release,pdk" />
+  <project path="external/vixl" name="platform/external/vixl" groups="aosp-android11-release,pdk" />
+  <project path="external/vogar" name="platform/external/vogar" groups="aosp-android11-release,pdk" />
+  <project path="external/volley" name="platform/external/volley" groups="aosp-android11-release,pdk" />
+  <project path="external/vulkan-headers" name="platform/external/vulkan-headers" groups="aosp-android11-release,pdk" />
+  <project path="external/vulkan-validation-layers" name="platform/external/vulkan-validation-layers" groups="aosp-android11-release,pdk" />
+  <project path="external/walt" name="platform/external/walt" groups="aosp-android11-release,pdk" />
+  <project path="external/wayland" name="platform/external/wayland" groups="aosp-android11-release,pdk" />
+  <project path="external/wayland-protocols" name="platform/external/wayland-protocols" groups="aosp-android11-release,pdk" />
+  <project path="external/webp" name="platform/external/webp" groups="pdk,qcom_msm8x26" />
+  <project path="external/webrtc" name="platform/external/webrtc" groups="aosp-android11-release,pdk" />
+  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="aosp-android11-release,pdk" />
+  <project path="external/wycheproof" name="platform/external/wycheproof" groups="aosp-android11-release,pdk" />
+  <project path="external/xmp_toolkit" name="platform/external/xmp_toolkit" groups="aosp-android11-release,pdk" />
+  <project path="external/xz-embedded" name="platform/external/xz-embedded" groups="aosp-android11-release,pdk" />
+  <project path="external/xz-java" name="platform/external/xz-java" groups="aosp-android11-release,pdk" />
+  <project path="external/XNNPACK" name="platform/external/XNNPACK" groups="aosp-android11-release,pdk" />
+  <project path="external/yapf" name="platform/external/yapf" groups="vts,projectarch,pdk" />
+  <project path="external/zlib" name="platform/external/zlib" groups="aosp-android11-release,pdk" />
+  <project path="external/zopfli" name="platform/external/zopfli" groups="aosp-android11-release,pdk" />
+  <project path="external/zxing" name="platform/external/zxing" groups="aosp-android11-release,pdk" />
+  <project groups="aosp-android11-release,pdk" name="platform/frameworks/av" path="frameworks/av" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/base" path="frameworks/base" />
+  <project groups="aosp-android11-release,pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" />
+  <project groups="aosp-android11-release,pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" />
+  <project groups="aosp-android11-release,pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/ex" path="frameworks/ex" />
+  <project groups="aosp-android11-release,pdk" name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/layoutlib" path="frameworks/layoutlib" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/libs/modules-utils" path="frameworks/libs/modules-utils" />
+  <project groups="aosp-android11-release,pdk" name="platform/frameworks/libs/native_bridge_support" path="frameworks/libs/native_bridge_support" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/libs/net" path="frameworks/libs/net" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/libs/systemui" path="frameworks/libs/systemui" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/minikin" path="frameworks/minikin" />
+  <project groups="aosp-android11-release,pdk" name="platform/frameworks/ml" path="frameworks/ml" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/multidex" path="frameworks/multidex" />
+  <project groups="aosp-android11-release,pdk" name="platform/frameworks/native" path="frameworks/native" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/frameworks/opt/car/services" path="frameworks/opt/car/services" />
+  <project groups="aosp-android11-release,pdk" name="platform/frameworks/opt/car/setupwizard" path="frameworks/opt/car/setupwizard" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/chips" path="frameworks/opt/chips" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" />
+  <project groups="aosp-android11-release,frameworks_ims,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" />
+  <project groups="aosp-android11-release,pdk" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" />
+  <project groups="aosp-android11-release,pdk" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/tv/tvsystem" path="frameworks/opt/tv/tvsystem" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" />
+  <project groups="aosp-android11-release,pdk" name="platform/frameworks/rs" path="frameworks/rs" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/google/apf" path="hardware/google/apf" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/google/av" path="hardware/google/av" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/google/camera" path="hardware/google/camera" />
+  <project groups="aosp-android11-release,easel,pdk" name="platform/hardware/google/easel" path="hardware/google/easel" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/google/interfaces" path="hardware/google/interfaces" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/interfaces" path="hardware/interfaces" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/libhardware" path="hardware/libhardware" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/nxp/nfc" path="hardware/nxp/nfc" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/nxp/secure_element" path="hardware/nxp/secure_element" />
+  <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" />
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" />
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" />
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" >
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-hal.mk" src="gps_vendor_product.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/gps-product-hal.mk" src="gps_vendor_product.mk" />
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/gps-board.mk" src="gps_vendor_board.mk" />
+    <linkfile dest="vendor/qcom/defs/board-defs/legacy/gps-board.mk" src="gps_vendor_board.mk" />
+  </project>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" />
+  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" />
+  <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" />
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/ril" path="hardware/ril" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/st/nfc" path="hardware/st/nfc" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/st/secure_element" path="hardware/st/secure_element" />
+  <project groups="aosp-android11-release,pdk" name="platform/hardware/ti/am57x" path="hardware/ti/am57x" />
+  <project groups="aosp-android11-release,pdk,vts" name="kernel/configs" />
+  <project name="kernel/msm-4.9" >
+    <linkfile dest="kernel/msm-4.9/Android.bp" src="Androidbp" />
+  </project>
+  <project groups="aosp-android11-release,pdk" name="kernel/prebuilts/4.19/arm64" />
+  <project groups="aosp-android11-release,pdk,vts" name="kernel/tests" />
+  <project groups="aosp-android11-release,pdk" name="platform/libcore" path="libcore" />
+  <project groups="aosp-android11-release,pdk" name="platform/libnativehelper" path="libnativehelper" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Browser2" path="packages/apps/Browser2" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Calendar" path="packages/apps/Calendar" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Camera2" path="packages/apps/Camera2" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Car/Notification" path="packages/apps/Car/Notification" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Car/tests" path="packages/apps/Car/tests" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Contacts" path="packages/apps/Contacts" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Dialer" path="packages/apps/Dialer" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/DocumentsUI" path="packages/apps/DocumentsUI" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Gallery" path="packages/apps/Gallery" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" />
+  <project name="platform/packages/apps/Mms" path="vendor/codeaurora/commonsys/packages/apps/Mms" >
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/app_mms_product.mk" src="app_mms_system_product.mk" />
+  </project>
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Music" path="packages/apps/Music" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" />
+  <project groups="aosp-android11-release,apps_nfc,pdk-fs" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/OnDeviceAppPrediction" path="packages/apps/OnDeviceAppPrediction" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/PackageInstaller" path="packages/apps/PermissionController" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Protips" path="packages/apps/Protips" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Provision" path="packages/apps/Provision" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/QuickAccessWallet" path="packages/apps/QuickAccessWallet" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/SampleLocationAttribution" path="packages/apps/SampleLocationAttribution" />
+  <project groups="aosp-android11-release,apps_se,pdk-fs" name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Settings" path="packages/apps/Settings" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" />
+  <project groups="aosp-android11-release,apps_stk,pdk-fs" name="platform/packages/apps/Stk" path="packages/apps/Stk" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager" />
+  <project groups="aosp-android11-release,pdk" name="platform/packages/apps/TV" path="packages/apps/TV" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Tag" path="packages/apps/Tag" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Terminal" path="packages/apps/Terminal" />
+  <project groups="aosp-android11-release,pdk" name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/ThemePicker" path="packages/apps/ThemePicker" />
+  <project groups="aosp-android11-release,pdk" name="platform/packages/apps/TimeZoneData" path="packages/apps/TimeZoneData" />
+  <project groups="aosp-android11-release,pdk" name="platform/packages/apps/TimeZoneUpdater" path="packages/apps/TimeZoneUpdater" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/Traceur" path="packages/apps/Traceur" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/apps/WallpaperPicker2" path="packages/apps/WallpaperPicker2" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/inputmethods/LeanbackIME" path="packages/inputmethods/LeanbackIME" />
+  <project groups="aosp-android11-release,pdk" name="platform/packages/modules/ArtPrebuilt" path="packages/modules/ArtPrebuilt" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/CaptivePortalLogin" path="packages/modules/CaptivePortalLogin" />
+  <project groups="aosp-android11-release,pdk" name="platform/packages/modules/CellBroadcastService" path="packages/modules/CellBroadcastService" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/Cronet" path="packages/modules/Cronet" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/DnsResolver" path="packages/modules/DnsResolver" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/ExtServices" path="packages/modules/ExtServices" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/IPsec" path="packages/modules/IPsec" />
+  <project groups="aosp-android11-release,pdk" name="platform/packages/modules/ModuleMetadata" path="packages/modules/ModuleMetadata" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/NetworkPermissionConfig" path="packages/modules/NetworkPermissionConfig" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/NetworkStack" path="packages/modules/NetworkStack" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/SdkExtensions" path="packages/modules/SdkExtensions" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/modules/vndk" path="packages/modules/vndk" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/providers/BlockedNumberProvider" path="packages/providers/BlockedNumberProvider" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/providers/BookmarkProvider" path="packages/providers/BookmarkProvider" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/AlternativeNetworkAccess" path="packages/services/AlternativeNetworkAccess" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/BuiltInPrintService" path="packages/services/BuiltInPrintService" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Car" path="packages/services/Car" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Mms" path="packages/services/Mms" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Mtp" path="packages/services/Mtp" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Telecomm" path="packages/services/Telecomm" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Telephony" path="packages/services/Telephony" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/wallpapers/ImageWallpaper" path="packages/wallpapers/ImageWallpaper" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" />
+  <project groups="aosp-android11-release,pdk" name="platform/pdk" path="pdk" />
+  <project groups="aosp-android11-release,cts,pdk-cw-fs,pdk-fs" name="platform/platform_testing" path="platform_testing" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/prebuilts/abi-dumps/platform" path="prebuilts/abi-dumps/platform" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/asuite" path="prebuilts/asuite" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/bundletool" path="prebuilts/bundletool" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" />
+  <project groups="aosp-android11-release,pdk,cyborg" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/prebuilts/cmdline-tools" path="prebuilts/cmdline-tools" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/prebuilts/devtools" path="prebuilts/devtools" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/prebuilts/fuchsia_sdk" path="prebuilts/fuchsia_sdk" />
+  <project groups="aosp-android11-release,arm,linux,pdk" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <project groups="arm,linux,pdk,qcom-LA.UM.7.3-incoming,vendor" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+  <project groups="aosp-android11-release,arm,linux,pdk" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <project groups="aosp-android11-release,linux,pdk" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" />
+  <project groups="aosp-android11-release,pdk-fs" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
+  <project groups="aosp-android11-release,linux,pdk,x86" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
+  <project groups="aosp-android11-release,linux,pdk" name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" />
+  <project groups="aosp-android11-release,linux,pdk,tradefed" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" />
+  <project groups="aosp-android11-release,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/jdk/jdk11" path="prebuilts/jdk/jdk11" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/jdk/jdk9" path="prebuilts/jdk/jdk9" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/ktlint" path="prebuilts/ktlint" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/manifest-merger" path="prebuilts/manifest-merger" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/misc" path="prebuilts/misc" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/module_sdk/art" path="prebuilts/module_sdk/art" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk" />
+  <project groups="aosp-android11-release,linux,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/r8" path="prebuilts/r8" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/remoteexecution-client" path="prebuilts/remoteexecution-client" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/runtime" path="prebuilts/runtime" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/rust" path="prebuilts/rust" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" >
+    <linkfile dest="frameworks/support.md" src="current/androidx-README.md" />
+  </project>
+  <project groups="aosp-android11-release,pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" />
+  <project path="prebuilts/tools-lineage" name="prebuilts/tools-lineage" groups="lineage" clone-depth="1" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/vndk/v27" path="prebuilts/vndk/v27" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/vndk/v28" path="prebuilts/vndk/v28" />
+  <project groups="aosp-android11-release,pdk" name="platform/prebuilts/vndk/v29" path="prebuilts/vndk/v29" />
+  <project groups="aosp-android11-release,pdk-cw-fs,pdk-fs" name="platform/sdk" path="sdk" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/apex" path="system/apex" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/bpf" path="system/bpf" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/bpfprogs" path="system/bpfprogs" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/bt" path="system/bt" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/ca-certificates" path="system/ca-certificates" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/chre" path="system/chre" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/connectivity/wificond" path="system/connectivity/wificond" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/core" path="system/core" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/extras" path="system/extras" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/gatekeeper" path="system/gatekeeper" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/gsid" path="system/gsid" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/hardware/interfaces" path="system/hardware/interfaces" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/hwservicemanager" path="system/hwservicemanager" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/incremental_delivery" path="system/incremental_delivery" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/iorap" path="system/iorap" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/keymaster" path="system/keymaster" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/libartpalette" path="system/libartpalette" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/libfmq" path="system/libfmq" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/libhidl" path="system/libhidl" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/libhwbinder" path="system/libhwbinder" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/libsysprop" path="system/libsysprop" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/libufdt" path="system/libufdt" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/libvintf" path="system/libvintf" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/linkerconfig" path="system/linkerconfig" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/media" path="system/media" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/memory/libion" path="system/memory/libion" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/memory/libmeminfo" path="system/memory/libmeminfo" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/memory/libmemtrack" path="system/memory/libmemtrack" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/memory/libmemunreachable" path="system/memory/libmemunreachable" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/memory/lmkd" path="system/memory/lmkd" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/netd" path="system/netd" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/nfc" path="system/nfc" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/nvram" path="system/nvram" />
+  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/security" path="system/security" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/sepolicy" path="system/sepolicy" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/server_configurable_flags" path="system/server_configurable_flags" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/teeui" path="system/teeui" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/testing/gtest_extras" path="system/testing/gtest_extras" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/timezone" path="system/timezone" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/tools/aidl" path="system/tools/aidl" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/tools/hidl" path="system/tools/hidl" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/tools/mkbootimg" path="system/tools/mkbootimg" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/tools/sysprop" path="system/tools/sysprop" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/tools/xsdc" path="system/tools/xsdc" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/update_engine" path="system/update_engine" />
+  <project groups="aosp-android11-release,pdk" name="platform/system/vold" path="system/vold" />
+  <project groups="aosp-android11-release,pdk,projectarch,vts" name="platform/test/framework" path="test/framework" />
+  <project groups="aosp-android11-release,pdk" name="platform/test/mlts/benchmark" path="test/mlts/benchmark" />
+  <project groups="aosp-android11-release,pdk" name="platform/test/mlts/models" path="test/mlts/models" />
+  <project groups="aosp-android11-release,cts,pdk-cw-fs,pdk-fs" name="platform/test/suite_harness" path="test/suite_harness" />
+  <project groups="aosp-android11-release,pdk,projectarch,vts" name="platform/test/vti/dashboard" path="test/vti/dashboard" />
+  <project groups="aosp-android11-release,pdk,projectarch,vts" name="platform/test/vti/fuzz_test_serving" path="test/vti/fuzz_test_serving" />
+  <project groups="aosp-android11-release,pdk,projectarch,vts" name="platform/test/vti/test_serving" path="test/vti/test_serving" />
+  <project groups="aosp-android11-release,pdk,vts" name="platform/test/vts" path="test/vts" />
+  <project groups="aosp-android11-release,pdk,projectarch,vts" name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" />
+  <project groups="aosp-android11-release,pdk,vts" name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" />
+  <project groups="aosp-android11-release,pdk,vts" name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" />
+  <project groups="aosp-android11-release,pdk,vts" name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" />
+  <project groups="aosp-android11-release,pdk,projectarch,vts" name="platform/test/vts-testcase/nbu" path="test/vts-testcase/nbu" />
+  <project groups="aosp-android11-release,pdk,projectarch,vts" name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" />
+  <project groups="aosp-android11-release,pdk,projectarch,vts" name="platform/test/vts-testcase/security" path="test/vts-testcase/security" />
+  <project groups="aosp-android11-release,pdk,vts" name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" />
+  <project groups="aosp-android11-release,pdk,projectarch,tools,tradefed,vts" name="platform/tools/acloud" path="tools/acloud" />
+  <project groups="aosp-android11-release,pdk,tools" name="platform/tools/apifinder" path="tools/apifinder" />
+  <project groups="aosp-android11-release,pdk,tradefed" name="platform/tools/apksig" path="tools/apksig" />
+  <project groups="aosp-android11-release,pdk,tradefed" name="platform/tools/apkzlib" path="tools/apkzlib" />
+  <project groups="aosp-android11-release,pdk" name="platform/tools/asuite" path="tools/asuite" />
+  <project groups="aosp-android11-release,pdk" name="platform/tools/currysrc" path="tools/currysrc" />
+  <project groups="aosp-android11-release,pdk-fs,tools" name="platform/tools/dexter" path="tools/dexter" />
+  <project groups="aosp-android11-release,pdk,tools" name="platform/tools/doc_generation" path="tools/doc_generation" />
+  <project groups="aosp-android11-release,nopresubmit,pdk,tradefed" name="platform/tools/loganalysis" path="tools/loganalysis" />
+  <project groups="aosp-android11-release,pdk,tools" name="platform/tools/metalava" path="tools/metalava" />
+  <project groups="aosp-android11-release,pdk" name="platform/tools/ndkports" path="tools/ndkports" />
+  <project groups="adt-infra,aosp-android11-release,cts,developers,motodev,pdk,tools,tradefed" name="platform/tools/repohooks" path="tools/repohooks" />
+  <project groups="aosp-android11-release,pdk,tools" name="platform/tools/security" path="tools/security" />
+  <project groups="aosp-android11-release,pdk" name="platform/tools/test/connectivity" path="tools/test/connectivity" />
+  <project groups="aosp-android11-release,pdk" name="platform/tools/test/graphicsbenchmark" path="tools/test/graphicsbenchmark" />
+  <project groups="aosp-android11-release,pdk,tradefed" name="platform/tools/tradefederation" path="tools/tradefederation/core" />
+  <project groups="aosp-android11-release,pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" />
+  <project groups="aosp-android11-release,cts,pdk,pdk-cw-fs,pdk-fs,tools" name="platform/tools/trebuchet" path="tools/trebuchet" />
+  <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" />
+  <project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/app_qtiSoundRecorder_product.mk" src="app_qtiSoundRecorder_system_product.mk" />
+  </project>
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" />
+  <project path="vendor/fairphone/fp3" name="vendor/fairphone/fp3" groups="fairphone" />
+  <project path="vendor/fairphone/fp3-common" name="vendor/fairphone/fp3-common" groups="fairphone" />
+  <project path="vendor/fairphone/fp3-sibon" name="vendor/fairphone/fp3-sibon" groups="fairphone" />
+  <project path="vendor/fairphone/media" name="vendor/fairphone/media" groups="fairphone" />
+  <project path="vendor/fairphone/tools" name="vendor/fairphone/tools" groups="fairphone" revision="refs/heads/main" />
+  <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" />
+  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" />
+  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" />
+  <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" >
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/nfc-vendor-product.mk" src="nfc_vendor_product.mk" />
+  </project>
+  <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" />
+  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" >
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/nfc-system-product.mk" src="nfc_system_product.mk" />
+  </project>
+  <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" />
+  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" />
+  <project name="platform/vendor/qcom-opensource/audio-hal/st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" />
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" >
+    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk" />
+    <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk" />
+    <linkfile dest="build.sh" src="build/build.sh" />
+  </project>
+  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" />
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" >
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk" />
+  </project>
+  <project name="platform/vendor/qcom-opensource/data-kernel" path="vendor/qcom/opensource/data-kernel" >
+    <linkfile dest="vendor/qcom/defs/board-defs/vendor/data_dlkm_vendor_board.mk" src="data_dlkm_vendor_board.mk" />
+  </project>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" />
+  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" />
+  <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" >
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/display-product-system.mk" src="config/display-product-system.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+  </project>
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" />
+  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" />
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" />
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" />
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" />
+  <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" />
+  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" />
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" />
+  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" />
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" />
+  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" />
+  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" >
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk" />
+  </project>
+  <project name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator" >
+    <linkfile dest="vendor/qcom/defs/product-defs/legacy/vibrator_product.mk" src="vibrator-vendor-product.mk" />
+  </project>
+  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" />
+  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" />
+  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" />
+  <project groups="aosp-android11-release,pdk" name="toolchain/pgo-profiles" />
+  <project groups="aosp-android11-release,pdk,pdk-cw-fs,pdk-fs" name="tools/platform-compat" />
+  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+</manifest>
