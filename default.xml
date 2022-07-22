@@ -18,7 +18,7 @@
   </project>
   <project groups="aosp,aosp-android11-release,pdk" name="platform/art" path="art" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/bionic" path="bionic" />
-  <project name="kernel/lk" path="bootable/bootloader/lk" />
+  <project groups="clo" name="kernel/lk" path="bootable/bootloader/lk" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/bootable/recovery" path="bootable/recovery" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/compatibility/cdd" path="compatibility/cdd" />
   <project groups="aosp,aosp-android11-release,cts,pdk-cw-fs,pdk-fs" name="platform/cts" path="cts" />
@@ -31,11 +31,11 @@
   <project path="device/fairphone/fp3-sibon" name="device/fairphone/fp3-sibon" groups="fairphone" />
   <project groups="aosp,aosp-android11-release,pdk" name="device/generic/arm64" />
   <project groups="aosp,aosp-android11-release,pdk" name="device/generic/common" />
-  <project name="device/qcom/common" >
+  <project groups="clo" name="device/qcom/common" >
     <linkfile dest="kernel/Android.mk" src="stop_scan.mk" />
   </project>
-  <project name="device/qcom/qssi" />
-  <project name="device/qcom/sepolicy" />
+  <project groups="clo" name="device/qcom/qssi" />
+  <project groups="clo" name="device/qcom/sepolicy" />
   <project groups="aosp,aosp-android11-release,pdk" name="device/sample" />
   <project path="external/aac" name="platform/external/aac" groups="aosp,aosp-android11-release,pdk" />
   <project path="external/adeb" name="platform/external/adeb" groups="aosp,aosp-android11-release,pdk" />
@@ -44,10 +44,10 @@
   <project path="external/androidplot" name="platform/external/androidplot" groups="aosp,aosp-android11-release,pdk" />
   <project path="external/angle" name="platform/external/angle" groups="aosp,aosp-android11-release,pdk" />
   <project path="external/ant-glob" name="platform/external/ant-glob" groups="aosp,aosp-android11-release,pdk" />
-  <project name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" />
-  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" />
-  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" />
-  <project name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" />
+  <project groups="clo" name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" />
+  <project groups="clo" name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" />
+  <project groups="clo" name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" />
+  <project groups="clo" name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" />
   <project path="external/antlr" name="platform/external/antlr" groups="aosp,aosp-android11-release,pdk" />
   <project path="external/apache-commons-bcel" name="platform/external/apache-commons-bcel" groups="aosp,aosp-android11-release,pdk" />
   <project path="external/apache-commons-compress" name="platform/external/apache-commons-compress" groups="aosp,aosp-android11-release,pdk" />
@@ -183,7 +183,7 @@
   <project path="external/jline" name="platform/external/jline" groups="aosp,pdk,tradefed,pdk-fs" />
   <project path="external/jsilver" name="platform/external/jsilver" groups="aosp,aosp-android11-release,pdk" />
   <project path="external/jsmn" name="platform/external/jsmn" groups="aosp,aosp-android11-release,pdk" />
-  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/json-c" path="external/json-c" />
+  <project groups="clo,qcom-LA.UM.7.3-incoming,vendor" name="platform/external/json-c" path="external/json-c" />
   <project path="external/jsoncpp" name="platform/external/jsoncpp" groups="aosp,aosp-android11-release,pdk" />
   <project path="external/jsr305" name="platform/external/jsr305" groups="aosp,aosp-android11-release,pdk" />
   <project path="external/jsr330" name="platform/external/jsr330" groups="aosp,aosp-android11-release,pdk" />
@@ -441,25 +441,25 @@
   <project groups="aosp,aosp-android11-release,pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/hardware/nxp/nfc" path="hardware/nxp/nfc" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/hardware/nxp/secure_element" path="hardware/nxp/secure_element" />
-  <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" />
-  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" />
-  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" />
-  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" >
+  <project groups="clo" name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" />
+  <project groups="clo" name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" />
+  <project groups="clo" name="platform/hardware/qcom/display" path="hardware/qcom/display" />
+  <project groups="clo" name="platform/hardware/qcom/gps" path="hardware/qcom/gps" >
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-hal.mk" src="gps_vendor_product.mk" />
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/gps-product-hal.mk" src="gps_vendor_product.mk" />
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/gps-board.mk" src="gps_vendor_board.mk" />
     <linkfile dest="vendor/qcom/defs/board-defs/legacy/gps-board.mk" src="gps_vendor_board.mk" />
   </project>
-  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" />
-  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" />
-  <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" />
-  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" />
+  <project groups="clo" name="platform/hardware/qcom/media" path="hardware/qcom/media" />
+  <project groups="clo" name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" />
+  <project groups="clo" name="platform/hardware/qcom/vr" path="hardware/qcom/vr" />
+  <project groups="clo" name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/hardware/ril" path="hardware/ril" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/hardware/st/nfc" path="hardware/st/nfc" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/hardware/st/secure_element" path="hardware/st/secure_element" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/hardware/ti/am57x" path="hardware/ti/am57x" />
   <project groups="aosp,aosp-android11-release,pdk,vts" name="kernel/configs" />
-  <project name="kernel/msm-4.9" >
+  <project groups="clo" name="kernel/msm-4.9" >
     <linkfile dest="kernel/msm-4.9/Android.bp" src="Androidbp" />
   </project>
   <project groups="aosp,aosp-android11-release,pdk" name="kernel/prebuilts/4.19/arm64" />
@@ -492,7 +492,7 @@
   <project groups="aosp,aosp-android11-release,pdk-fs" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" />
   <project groups="aosp,aosp-android11-release,pdk-fs" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" />
   <project groups="aosp,aosp-android11-release,pdk-fs" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" />
-  <project name="platform/packages/apps/Mms" path="vendor/codeaurora/commonsys/packages/apps/Mms" >
+  <project groups="clo" name="platform/packages/apps/Mms" path="vendor/codeaurora/commonsys/packages/apps/Mms" >
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/app_mms_product.mk" src="app_mms_system_product.mk" />
   </project>
   <project groups="aosp,aosp-android11-release,pdk-fs" name="platform/packages/apps/Music" path="packages/apps/Music" />
@@ -579,7 +579,7 @@
   <project groups="aosp,aosp-android11-release,pdk-fs" name="platform/prebuilts/devtools" path="prebuilts/devtools" />
   <project groups="aosp,aosp-android11-release,pdk-fs" name="platform/prebuilts/fuchsia_sdk" path="prebuilts/fuchsia_sdk" />
   <project groups="aosp,aosp-android11-release,arm,linux,pdk" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
-  <project groups="arm,linux,pdk,qcom-LA.UM.7.3-incoming,vendor" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+  <project groups="clo,arm,linux,pdk,qcom-LA.UM.7.3-incoming,vendor" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
   <project groups="aosp,aosp-android11-release,arm,linux,pdk" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
   <project groups="aosp,aosp-android11-release,linux,pdk" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" />
   <project groups="aosp,aosp-android11-release,pdk-fs" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
@@ -646,7 +646,7 @@
   <project groups="aosp,aosp-android11-release,pdk" name="platform/system/netd" path="system/netd" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/system/nfc" path="system/nfc" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/system/nvram" path="system/nvram" />
-  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" />
+  <project groups="clo" name="platform/system/qcom" path="vendor/qcom/opensource/softap" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/system/security" path="system/security" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/system/sepolicy" path="system/sepolicy" />
   <project groups="aosp,aosp-android11-release,pdk" name="platform/system/server_configurable_flags" path="system/server_configurable_flags" />
@@ -694,67 +694,67 @@
   <project groups="aosp,aosp-android11-release,pdk,tradefed" name="platform/tools/tradefederation" path="tools/tradefederation/core" />
   <project groups="aosp,aosp-android11-release,pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" />
   <project groups="aosp,aosp-android11-release,cts,pdk,pdk-cw-fs,pdk-fs,tools" name="platform/tools/trebuchet" path="tools/trebuchet" />
-  <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" />
-  <project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" >
+  <project groups="clo" name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" />
+  <project groups="clo" name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" >
     <linkfile dest="vendor/qcom/defs/product-defs/system/app_qtiSoundRecorder_product.mk" src="app_qtiSoundRecorder_system_product.mk" />
   </project>
-  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" />
+  <project groups="clo" name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" />
   <project path="vendor/fairphone/fp3" name="vendor/fairphone/fp3" groups="fairphone" />
   <project path="vendor/fairphone/fp3-common" name="vendor/fairphone/fp3-common" groups="fairphone" />
   <project path="vendor/fairphone/fp3-sibon" name="vendor/fairphone/fp3-sibon" groups="fairphone" />
   <project path="vendor/fairphone/media" name="vendor/fairphone/media" groups="fairphone" />
   <project path="vendor/fairphone/tools" name="vendor/fairphone/tools" groups="fairphone" revision="refs/heads/main" />
-  <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" />
-  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" />
-  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" />
-  <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" >
+  <project groups="clo" name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" />
+  <project groups="clo" name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" />
+  <project groups="clo" name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" />
+  <project groups="clo" name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" >
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/nfc-vendor-product.mk" src="nfc_vendor_product.mk" />
   </project>
-  <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" />
-  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" >
+  <project groups="clo" name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" />
+  <project groups="clo" name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" >
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/nfc-system-product.mk" src="nfc_system_product.mk" />
   </project>
-  <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" />
-  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" />
-  <project name="platform/vendor/qcom-opensource/audio-hal/st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" />
-  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" >
+  <project groups="clo" name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/audio-hal/st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" >
     <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk" />
     <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk" />
     <linkfile dest="build.sh" src="build/build.sh" />
   </project>
-  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" />
-  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" >
+  <project groups="clo" name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" >
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk" />
   </project>
-  <project name="platform/vendor/qcom-opensource/data-kernel" path="vendor/qcom/opensource/data-kernel" >
+  <project groups="clo" name="platform/vendor/qcom-opensource/data-kernel" path="vendor/qcom/opensource/data-kernel" >
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/data_dlkm_vendor_board.mk" src="data_dlkm_vendor_board.mk" />
   </project>
-  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" />
-  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" />
-  <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" >
+  <project groups="clo" name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" >
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/display-product-system.mk" src="config/display-product-system.mk" />
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
   </project>
-  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" />
-  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" />
-  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" />
-  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" />
-  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" />
-  <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" />
-  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" />
-  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" />
-  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" />
-  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" />
-  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" />
-  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" >
+  <project groups="clo" name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" >
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk" />
   </project>
-  <project name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator" >
+  <project groups="clo" name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator" >
     <linkfile dest="vendor/qcom/defs/product-defs/legacy/vibrator_product.mk" src="vibrator-vendor-product.mk" />
   </project>
-  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" />
-  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" />
-  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" />
+  <project groups="clo" name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" />
   <project groups="aosp,aosp-android11-release,pdk" name="toolchain/pgo-profiles" />
   <project groups="aosp,aosp-android11-release,pdk,pdk-cw-fs,pdk-fs" name="tools/platform-compat" />
 
