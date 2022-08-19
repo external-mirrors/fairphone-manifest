@@ -1,127 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://git.codelinaro.org/clo/la" name="clo" review="codelinaro.org"/>
-  <default remote="clo" revision="partner-android/q-fs-release"/>
 
-  <project name="device/qcom/common" />
-    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-    <linkfile dest="kernel/Android.mk" src="stop_scan.mk"/>
-    <linkfile dest="disregard/Android.mk" src="stop_scan.mk"/>
-  </project>
-  <project name="device/qcom/qssi" />
+  <!-- Device projects -->
   <project name="device/qcom/sepolicy" />
-  <project name="device/qcom/vendor-common" />
+
+
+  <!-- Kernel projects -->
   <project name="kernel/lk" path="bootable/bootloader/lk" />
   <project name="kernel/msm-4.9" >
     <linkfile dest="kernel/msm-4.9/Android.bp" src="Androidbp"/>
   </project>
+  <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" />
+  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" />
+
+
+  <!-- External projects -->
   <project name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" />
   <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" />
   <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" />
   <project name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" />
   <project name="platform/external/json-c" path="external/json-c" />
-  <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" />
+
+
+  <!-- Hardware projects -->
+  <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio" />
   <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" />
-  <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" />
   <project name="platform/hardware/qcom/display" path="hardware/qcom/display" />
   <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" />
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-hal.mk" src="gps_vendor_product.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/legacy/gps-product-hal.mk" src="gps_vendor_product.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/gps-board.mk" src="gps_vendor_board.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/legacy/gps-board.mk" src="gps_vendor_board.mk"/>
-  </project>
   <project name="platform/hardware/qcom/media" path="hardware/qcom/media" />
-  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" />
-  <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" />
   <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" />
-  <project name="platform/packages/apps/Mms" path="vendor/codeaurora/commonsys/packages/apps/Mms" />
-    <linkfile dest="vendor/qcom/defs/product-defs/legacy/app_mms_product.mk" src="app_mms_system_product.mk"/>
-  </project>
-  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" />
-  <project name="platform/packages/apps/SnapdragonGallery" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonGallery" />
-  <project name="platform/packages/apps/SnapdragonMusic" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonMusic" />
-    <linkfile dest="vendor/qcom/defs/product-defs/system/app_snapMusic_product.mk" src="app_snapMusic_system_product.mk"/>
-  </project>
-  <project groups="arm,linux,pdk,qcom-LA.UM.7.3-incoming,vendor" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+
+
+  <!-- Prebuilt project -->
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+
+
+  <!-- System project -->
   <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" />
-  <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" />
+
+
+  <!-- Codeaurora apps project -->
   <project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" />
-    <linkfile dest="vendor/qcom/defs/product-defs/system/app_qtiSoundRecorder_product.mk" src="app_qtiSoundRecorder_system_product.mk"/>
-  </project>
+
+
+  <!-- Codeaurora telephony project -->
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" />
+
+
+  <!-- NXP NFC projects -->
   <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" />
   <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" />
   <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" />
   <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" />
-    <linkfile dest="vendor/qcom/defs/product-defs/legacy/nfc-vendor-product.mk" src="nfc_vendor_product.mk"/>
-  </project>
   <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" />
   <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" />
-    <linkfile dest="vendor/qcom/defs/product-defs/legacy/nfc-system-product.mk" src="nfc_system_product.mk"/>
-  </project>
-  <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" />
+
+
+  <!-- Commonsys projects -->
   <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" />
-  <project name="platform/vendor/qcom-opensource/audio-hal/st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" />
-  <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" />
-  <project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/bluetooth" />
-    <linkfile dest="vendor/qcom/defs/board-defs/legacy/bt-system-legacy-board.mk" src="bt-system-legacy-board.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/legacy/bt-system-opensource-product.mk" src="bt-system-opensource-product.mk"/>
-  </project>
-  <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" />
-  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" />
-    <linkfile dest="vendor/qcom/build/tasks/QSSI_violators.mk" src="build/QSSI_violators.mk"/>
-    <linkfile dest="vendor/qcom/build/tasks/QMAA_enforcement.mk" src="build/QMAA_enforcement.mk"/>
-    <linkfile dest="vendor/qcom/build/tasks/vendor_prop_context_restriction.mk" src="build/vendor_prop_context_restriction.mk"/>
-    <linkfile dest="build.sh" src="build/build.sh"/>
-  </project>
   <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" />
-  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" />
-    <linkfile dest="vendor/qcom/defs/product-defs/legacy/ipacm_vendor_product.mk" src="ipacm_vendor_product.mk"/>
-  </project>
-  <project name="platform/vendor/qcom-opensource/data-kernel" path="vendor/qcom/opensource/data-kernel" />
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/data_dlkm_vendor_board.mk" src="data_dlkm_vendor_board.mk"/>
-  </project>
-  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" />
   <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" />
-  <project name="platform/vendor/qcom-opensource/display-commonsys" path="vendor/qcom/opensource/commonsys/display" />
-    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
-  </project>
   <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" />
-    <linkfile dest="vendor/qcom/defs/product-defs/legacy/display-product-system.mk" src="config/display-product-system.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/legacy/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
-  </project>
-  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" />
   <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" />
-  <project name="platform/vendor/qcom-opensource/fm-commonsys" path="vendor/qcom/opensource/commonsys/fm" />
-  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" />
+
+
+  <!-- Other projects -->
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" />
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" />
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" />
   <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" />
   <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" />
-  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" />
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
-    <linkfile dest="vendor/qcom/defs/product-defs/legacy/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
-  </project>
-  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" />
-  <project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" />
   <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" />
   <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" />
   <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" />
-  <project name="platform/vendor/qcom-opensource/system/bt" path="vendor/qcom/opensource/commonsys/system/bt" />
   <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" />
   <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" />
-  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" />
   <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" />
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
-  </project>
   <project name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator" />
-    <linkfile dest="vendor/qcom/defs/product-defs/legacy/vibrator_product.mk" src="vibrator-vendor-product.mk"/>
-  </project>
-  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" />
-  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" />
-  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" />
-  <project name="platform/vendor/qcom/msm8937_32go" path="device/qcom/msm8937_32go" />
-  <project name="platform/vendor/qcom/thorium_32" path="device/qcom/msm8937_32" />
-  <project name="platform/vendor/qcom/thorium_64" path="device/qcom/msm8937_64" />
-  <project name="platform/vendor/qcom/titanium_32" path="device/qcom/msm8953_32" />
-  <project name="platform/vendor/qcom/titanium_64" path="device/qcom/msm8953_64" />
-  <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" />
 </manifest>
