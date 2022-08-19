@@ -2,79 +2,79 @@
 <manifest>
 
   <!-- Device projects -->
-  <project name="device/qcom/sepolicy" />
+  <project name="device/qcom/sepolicy" groups="clo" />
 
 
   <!-- Kernel projects -->
-  <project name="kernel/lk" path="bootable/bootloader/lk" />
-  <project name="kernel/msm-4.9" >
+  <project name="kernel/lk" path="bootable/bootloader/lk" groups="clo" />
+  <project name="kernel/msm-4.9" groups="clo" >
     <linkfile dest="kernel/msm-4.9/Android.bp" src="Androidbp"/>
   </project>
-  <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" />
-  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" />
+  <project name="platform/vendor/opensource/audio-kernel" path="vendor/qcom/opensource/audio-kernel" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" groups="clo" />
 
 
   <!-- External projects -->
-  <project name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" />
-  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" />
-  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" />
-  <project name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" />
-  <project name="platform/external/json-c" path="external/json-c" />
+  <project name="platform/external/ant-wireless/ant_client" path="external/ant-wireless/ant_client" groups="clo" />
+  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" groups="clo" />
+  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" groups="clo" />
+  <project name="platform/external/ant-wireless/hidl" path="external/ant-wireless/hidl" groups="clo" />
+  <project name="platform/external/json-c" path="external/json-c" groups="clo" />
 
 
   <!-- Hardware projects -->
-  <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio" />
-  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" />
-  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" />
-  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" />
-  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" />
-  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" />
+  <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio" groups="clo" />
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" groups="clo" />
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" groups="clo" />
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" groups="clo" />
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" groups="clo" />
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" groups="clo" />
 
 
   <!-- Prebuilt project -->
-  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" />
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="clo" />
 
 
   <!-- System project -->
-  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" />
+  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" groups="clo" />
 
 
   <!-- Codeaurora apps project -->
-  <project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" />
+  <project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" groups="clo" />
 
 
   <!-- Codeaurora telephony project -->
-  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" />
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" groups="clo" />
 
 
   <!-- NXP NFC projects -->
-  <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" />
-  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" />
-  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" />
-  <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" />
-  <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" />
-  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" />
+  <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" groups="clo" />
+  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" groups="clo" />
+  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" groups="clo" />
+  <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" groups="clo" />
+  <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" groups="clo" />
+  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" groups="clo" />
 
 
   <!-- Commonsys projects -->
-  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" />
-  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" />
-  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" />
-  <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" />
-  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" />
+  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/commonsys/audio" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" groups="clo" />
 
 
   <!-- Other projects -->
-  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" />
-  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" />
-  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" />
-  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" />
-  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" />
-  <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" />
-  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" />
-  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" />
-  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" />
-  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" />
-  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" />
-  <project name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator" />
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" groups="clo" />
+  <project name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator" groups="clo" />
 </manifest>
