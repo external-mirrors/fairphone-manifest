@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <project path="device/fairphone/FP3" name="device/fairphone/fp3" groups="fairphone" />
+  <project path="device/fairphone/fp3-common" name="device/fairphone/fp3-common" groups="fairphone" />
+  <project path="device/fairphone/fp3-sibon" name="device/fairphone/fp3-sibon" groups="fairphone" />
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="pdk,linux,arm" clone-depth="1" />
+  <project path="vendor/fairphone/fp3" name="vendor/fairphone/fp3" groups="fairphone" />
+  <project path="vendor/fairphone/fp3-common" name="vendor/fairphone/fp3-common" groups="fairphone" />
+  <project path="vendor/fairphone/fp3-sibon" name="vendor/fairphone/fp3-sibon" groups="fairphone" />
+  <project path="vendor/fairphone/media" name="vendor/fairphone/media" groups="fairphone" />
+  <project path="vendor/fairphone/tools" name="vendor/fairphone/tools" groups="fairphone" revision="refs/heads/main" />
+</manifest>

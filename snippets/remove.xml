@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Device projects -->
+  <remove-project path="device/amlogic/yukawa" name="device/amlogic/yukawa" groups="device,yukawa,pdk" />
+  <remove-project path="device/amlogic/yukawa-kernel" name="device/amlogic/yukawa-kernel" groups="device,yukawa,pdk" clone-depth="2" />
+  <remove-project path="device/generic/armv7-a-neon" name="device/generic/armv7-a-neon" groups="pdk" />
+  <remove-project path="device/generic/art" name="device/generic/art" groups="pdk" />
+  <remove-project path="device/generic/car" name="device/generic/car" groups="pdk" />
+  <remove-project path="device/generic/mini-emulator-arm64" name="device/generic/mini-emulator-arm64" groups="pdk" />
+  <remove-project path="device/generic/mini-emulator-armv7-a-neon" name="device/generic/mini-emulator-armv7-a-neon" groups="pdk" />
+  <remove-project path="device/generic/mini-emulator-x86" name="device/generic/mini-emulator-x86" groups="pdk" />
+  <remove-project path="device/generic/mini-emulator-x86_64" name="device/generic/mini-emulator-x86_64" groups="pdk" />
+  <remove-project path="device/generic/opengl-transport" name="device/generic/opengl-transport" groups="pdk" />
+  <remove-project path="device/generic/qemu" name="device/generic/qemu" groups="pdk" />
+  <remove-project path="device/generic/trusty" name="device/generic/trusty" groups="pdk" />
+  <remove-project path="device/generic/uml" name="device/generic/uml" groups="device,pdk" />
+  <remove-project path="device/generic/x86" name="device/generic/x86" groups="pdk" />
+  <remove-project path="device/generic/x86_64" name="device/generic/x86_64" groups="pdk" />
+  <remove-project path="device/google/atv" name="device/google/atv" groups="device,broadcom_pdk,generic_fs,pdk" />
+  <remove-project path="device/google/barbet" name="device/google/barbet" groups="device,barbet" />
+  <remove-project path="device/google/barbet-sepolicy" name="device/google/barbet-sepolicy" groups="device,barbet" />
+  <remove-project path="device/google/bluejay" name="device/google/bluejay" groups="device,bluejay" />
+  <remove-project path="device/google/bluejay-kernel" name="device/google/bluejay-kernel" groups="device,bluejay" clone-depth="1" />
+  <remove-project path="device/google/bluejay-sepolicy" name="device/google/bluejay-sepolicy" groups="device,bluejay" />
+  <remove-project path="device/google/bramble" name="device/google/bramble" groups="device,bramble" />
+  <remove-project path="device/google/bramble-sepolicy" name="device/google/bramble-sepolicy" groups="device,bramble" />
+  <remove-project path="device/google/contexthub" name="device/google/contexthub" groups="device,pdk" />
+  <remove-project path="device/google/coral" name="device/google/coral" groups="device,coral,generic_fs" />
+  <remove-project path="device/google/coral-kernel" name="device/google/coral-kernel" groups="device,coral,generic_fs" clone-depth="1" />
+  <remove-project path="device/google/coral-sepolicy" name="device/google/coral-sepolicy" groups="device,coral,generic_fs" />
+  <remove-project path="device/google/gs101" name="device/google/gs101" groups="aosp,device,slider,bluejay,pdk-gs-arm" />
+  <remove-project path="device/google/gs101-sepolicy" name="device/google/gs101-sepolicy" groups="aosp,device,slider,bluejay,pdk-gs-arm" />
+  <remove-project path="device/google/gs201" name="device/google/gs201" groups="device,cloudripper" />
+  <remove-project path="device/google/gs201-sepolicy" name="device/google/gs201-sepolicy" groups="device,cloudripper" />
+  <remove-project path="device/google/gs-common" name="device/google/gs-common" groups="aosp,device,slider,bluejay,pdk-gs-arm" />
+  <remove-project path="device/google/pantah" name="device/google/pantah" groups="device,cloudripper" />
+  <remove-project path="device/google/pantah-sepolicy" name="device/google/pantah-sepolicy" groups="device,cloudripper" />
+  <remove-project path="device/google/pantah-kernel" name="device/google/pantah-kernel" groups="device,cloudripper" clone-depth="1" />
+  <remove-project path="device/google/raviole" name="device/google/raviole" groups="aosp,device,slider,pdk-gs-arm" />
+  <remove-project path="device/google/raviole-kernel" name="device/google/raviole-kernel" groups="aosp,device,slider,pdk-gs-arm" clone-depth="1" />
+  <remove-project path="device/google/redbull" name="device/google/redbull" groups="device,redbull" />
+  <remove-project path="device/google/redbull-kernel" name="device/google/redbull-kernel" groups="device,bramble,redfin" clone-depth="1" />
+  <remove-project path="device/google/redbull-sepolicy" name="device/google/redbull-sepolicy" groups="device,redbull" />
+  <remove-project path="device/google/redfin" name="device/google/redfin" groups="device,redfin" />
+  <remove-project path="device/google/redfin-sepolicy" name="device/google/redfin-sepolicy" groups="device,redfin" />
+  <remove-project path="device/google/sunfish" name="device/google/sunfish" groups="device,sunfish" />
+  <remove-project path="device/google/sunfish-kernel" name="device/google/sunfish-kernel" groups="device,sunfish" clone-depth="1" />
+  <remove-project path="device/google/sunfish-sepolicy" name="device/google/sunfish-sepolicy" groups="device,sunfish" />
+  <remove-project path="device/google/trout" name="device/google/trout" groups="device,trout,gull,pdk" />
+  <remove-project path="device/google/vrservices" name="device/google/vrservices" groups="pdk" />
+  <remove-project path="device/google_car" name="device/google_car" groups="pdk" />
+  <remove-project path="device/linaro/dragonboard" name="device/linaro/dragonboard" groups="device,dragonboard,pdk" />
+  <remove-project path="device/linaro/dragonboard-kernel" name="device/linaro/dragonboard-kernel" groups="device,dragonboard,pdk" clone-depth="1" />
+  <remove-project path="device/linaro/hikey" name="device/linaro/hikey" groups="device,hikey,pdk" />
+  <remove-project path="device/linaro/hikey-kernel" name="device/linaro/hikey-kernel" groups="device,hikey,pdk" clone-depth="1" />
+  <remove-project path="device/linaro/poplar" name="device/linaro/poplar" groups="device,poplar,pdk" />
+  <remove-project path="device/linaro/poplar-kernel" name="device/linaro/poplar-kernel" groups="device,poplar,pdk" clone-depth="1" />
+  <remove-project name="device/mediatek/wembley-sepolicy" path="device/mediatek/wembley-sepolicy" groups="device"/>
+  <remove-project path="device/ti/beagle_x15" name="device/ti/beagle-x15" groups="device,beagle_x15,pdk" />
+  <remove-project path="device/ti/beagle_x15-kernel" name="device/ti/beagle-x15-kernel" groups="device,beagle_x15,pdk" clone-depth="1" />
+
+
+  <!-- Hardware projects -->
+  <remove-project path="hardware/broadcom/libbt" name="platform/hardware/broadcom/libbt" groups="aosp,pdk" />
+  <remove-project path="hardware/broadcom/wlan" name="platform/hardware/broadcom/wlan" groups="aosp,pdk,broadcom_wlan" />
+  <remove-project path="hardware/google/av" name="platform/hardware/google/av" groups="aosp,pdk" />
+  <remove-project path="hardware/google/camera" name="platform/hardware/google/camera" groups="aosp,pdk" />
+  <remove-project path="hardware/google/easel" name="platform/hardware/google/easel" groups="aosp,pdk,easel" />
+  <remove-project path="hardware/google/gchips" name="platform/hardware/google/gchips" groups="aosp,pdk-lassen,pdk-gs-arm" />
+  <remove-project path="hardware/google/graphics/common" name="platform/hardware/google/graphics/common" groups="aosp,pdk-lassen,pdk-gs-arm" />
+  <remove-project path="hardware/google/graphics/gs101" name="platform/hardware/google/graphics/gs101" groups="aosp,pdk-lassen,pdk-gs-arm" />
+  <remove-project path="hardware/google/graphics/gs201" name="platform/hardware/google/graphics/gs201" groups="cloudripper" />
+  <remove-project path="hardware/google/interfaces" name="platform/hardware/google/interfaces" groups="aosp,pdk" />
+  <remove-project path="hardware/google/pixel" name="platform/hardware/google/pixel" groups="aosp,generic_fs,pixel" />
+  <remove-project path="hardware/google/pixel-sepolicy" name="platform/hardware/google/pixel-sepolicy" groups="aosp,generic_fs,pixel" />
+  <remove-project path="hardware/knowles/athletico/sound_trigger_hal" name="platform/hardware/knowles/athletico/sound_trigger_hal" groups="aosp,coral,generic_fs" />
+  <remove-project path="hardware/qcom/audio" name="platform/hardware/qcom/audio" groups="aosp,qcom,qcom_audio,pdk-qcom" />
+  <remove-project path="hardware/qcom/bootctrl" name="platform/hardware/qcom/bootctrl" groups="aosp,pdk-qcom" />
+  <remove-project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="aosp,qcom,pdk-qcom" />
+  <remove-project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="aosp,qcom_camera,pdk-qcom" />
+  <remove-project path="hardware/qcom/data/ipacfg-mgr" name="platform/hardware/qcom/data/ipacfg-mgr" groups="aosp,qcom,pdk-qcom" />
+  <remove-project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="aosp,pdk-qcom,qcom,qcom_display" />
+  <remove-project path="hardware/qcom/gps" name="platform/hardware/qcom/gps" groups="aosp,qcom,qcom_gps,pdk-qcom" />
+  <remove-project path="hardware/qcom/keymaster" name="platform/hardware/qcom/keymaster" groups="aosp,qcom,qcom_keymaster,pdk-qcom" />
+  <remove-project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="aosp,qcom,pdk-qcom" />
+  <remove-project path="hardware/qcom/msm8960" name="platform/hardware/qcom/msm8960" groups="aosp,qcom_msm8960,pdk-qcom" />
+  <remove-project path="hardware/qcom/msm8994" name="platform/hardware/qcom/msm8994" groups="aosp,qcom_msm8994,pdk-qcom" />
+  <remove-project path="hardware/qcom/msm8996" name="platform/hardware/qcom/msm8996" groups="aosp,qcom_msm8996,pdk-qcom" />
+  <remove-project path="hardware/qcom/msm8x09" name="platform/hardware/qcom/msm8x09" groups="aosp,qcom_msm8x09" />
+  <remove-project path="hardware/qcom/msm8x26" name="platform/hardware/qcom/msm8x26" groups="aosp,qcom_msm8x26,pdk-qcom" />
+  <remove-project path="hardware/qcom/msm8x27" name="platform/hardware/qcom/msm8x27" groups="aosp,qcom_msm8x27,pdk-qcom" />
+  <remove-project path="hardware/qcom/msm8x84" name="platform/hardware/qcom/msm8x84" groups="aosp,qcom_msm8x84,pdk-qcom" />
+  <remove-project path="hardware/qcom/power" name="platform/hardware/qcom/power" groups="aosp,qcom,pdk-qcom" />
+  <remove-project path="hardware/qcom/sdm845/bt" name="platform/hardware/qcom/sdm845/bt" groups="aosp,generic_fs,qcom_sdm845" />
+  <remove-project path="hardware/qcom/sdm845/data/ipacfg-mgr" name="platform/hardware/qcom/sdm845/data/ipacfg-mgr" groups="aosp,generic_fs,vendor,qcom_sdm845" />
+  <remove-project path="hardware/qcom/sdm845/display" name="platform/hardware/qcom/sdm845/display" groups="aosp,generic_fs,qcom_sdm845" />
+  <remove-project path="hardware/qcom/sdm845/gps" name="platform/hardware/qcom/sdm845/gps" groups="aosp,generic_fs,qcom_sdm845" />
+  <remove-project path="hardware/qcom/sdm845/media" name="platform/hardware/qcom/sdm845/media" groups="aosp,generic_fs,qcom_sdm845" />
+  <remove-project path="hardware/qcom/sdm845/thermal" name="platform/hardware/qcom/sdm845/thermal" groups="aosp,generic_fs,qcom_sdm845" />
+  <remove-project path="hardware/qcom/sdm845/vr" name="platform/hardware/qcom/sdm845/vr" groups="aosp,generic_fs,qcom_sdm845" />
+  <remove-project path="hardware/qcom/sm7150/gps" name="platform/hardware/qcom/sm7150/gps" groups="aosp,qcom_sm7150" />
+  <remove-project path="hardware/qcom/sm7250/display" name="platform/hardware/qcom/sm7250/display" groups="aosp,qcom_sm7250" />
+  <remove-project path="hardware/qcom/sm7250/gps" name="platform/hardware/qcom/sm7250/gps" groups="aosp,qcom_sm7250" />
+  <remove-project path="hardware/qcom/sm7250/media" name="platform/hardware/qcom/sm7250/media" groups="aosp,qcom_sm7250" />
+  <remove-project path="hardware/qcom/sm8150/data/ipacfg-mgr" name="platform/hardware/qcom/sm8150/data/ipacfg-mgr" groups="aosp,qcom_sm8150" />
+  <remove-project path="hardware/qcom/sm8150/display" name="platform/hardware/qcom/sm8150/display" groups="aosp,qcom_sm8150" />
+  <remove-project path="hardware/qcom/sm8150/gps" name="platform/hardware/qcom/sm8150/gps" groups="aosp,qcom_sm8150" />
+  <remove-project path="hardware/qcom/sm8150/media" name="platform/hardware/qcom/sm8150/media" groups="aosp,qcom_sm8150" />
+  <remove-project path="hardware/qcom/sm8150/thermal" name="platform/hardware/qcom/sm8150/thermal" groups="aosp,qcom_sm8150" />
+  <remove-project path="hardware/qcom/sm8150/vr" name="platform/hardware/qcom/sm8150/vr" groups="aosp,qcom_sm8150" />
+  <remove-project path="hardware/qcom/sm8150p/gps" name="platform/hardware/qcom/sm8150p/gps" groups="aosp,qcom_sm8150p" />
+  <remove-project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="aosp,qcom_wlan,pdk-qcom" />
+  <remove-project path="hardware/samsung/nfc" name="platform/hardware/samsung/nfc" groups="aosp,pdk" />
+  <remove-project path="hardware/st/nfc" name="platform/hardware/st/nfc" groups="aosp,pdk" />
+  <remove-project path="hardware/st/secure_element" name="platform/hardware/st/secure_element" groups="aosp,pdk" />
+  <remove-project path="hardware/st/secure_element2" name="platform/hardware/st/secure_element2" groups="aosp,pdk" />
+  <remove-project path="hardware/ti/am57x" name="platform/hardware/ti/am57x" groups="aosp,pdk" />
+
+
+  <!-- Kernel prebuilt projects -->
+  <remove-project path="kernel/prebuilts/4.19/arm64" name="kernel/prebuilts/4.19/arm64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/5.10/x86_64" name="kernel/prebuilts/5.10/x86-64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/5.15/x86_64" name="kernel/prebuilts/5.15/x86-64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/5.4/arm64" name="kernel/prebuilts/5.4/arm64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/5.4/x86_64" name="kernel/prebuilts/5.4/x86-64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/4.19/arm64" name="kernel/prebuilts/common-modules/virtual-device/4.19/arm64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/4.19/x86-64" name="kernel/prebuilts/common-modules/virtual-device/4.19/x86-64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64" name="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/5.15/x86-64" name="kernel/prebuilts/common-modules/virtual-device/5.15/x86-64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/5.4/arm64" name="kernel/prebuilts/common-modules/virtual-device/5.4/arm64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/5.4/x86-64" name="kernel/prebuilts/common-modules/virtual-device/5.4/x86-64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/mainline/arm64" name="kernel/prebuilts/mainline/arm64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="kernel/prebuilts/mainline/x86_64" name="kernel/prebuilts/mainline/x86-64" groups="aosp,pdk" clone-depth="1" />
+
+
+  <!-- Apps -->
+  <remove-project path="packages/apps/Browser2" name="platform/packages/apps/Browser2" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/Calendar" name="platform/packages/apps/Car/Calendar" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/Cluster" name="platform/packages/apps/Car/Cluster" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/DebuggingRestrictionController" name="platform/packages/apps/Car/DebuggingRestrictionController" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/DialerPrebuilt" name="platform/packages/apps/Car/DialerPrebuilt" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/Hvac" name="platform/packages/apps/Car/Hvac" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/LatinIME" name="platform/packages/apps/Car/LatinIME" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/Launcher" name="platform/packages/apps/Car/Launcher" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/LinkViewer" name="platform/packages/apps/Car/LinkViewer" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/LocalMediaPlayer" name="platform/packages/apps/Car/LocalMediaPlayer" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/MediaPrebuilt" name="platform/packages/apps/Car/MediaPrebuilt" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/MessengerPrebuilt" name="platform/packages/apps/Car/MessengerPrebuilt" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/Provision" name="platform/packages/apps/Car/Provision" groups="pdk-fs" />
+  <remove-project path="packages/apps/Car/Radio" name="platform/packages/apps/Car/Radio" groups="pdk-fs" />
+  <remove-project path="packages/apps/DevCamera" name="platform/packages/apps/DevCamera" groups="pdk" />
+  <remove-project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" groups="pdk-fs" />
+  <remove-project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" groups="pdk-fs" />
+  <remove-project path="packages/apps/TV" name="platform/packages/apps/TV" groups="pdk" />
+  <remove-project path="packages/apps/UniversalMediaPlayer" name="platform/packages/apps/UniversalMediaPlayer" />
+
+
+  <!-- Prebuilts projects -->
+  <remove-project path="packages/modules/BootPrebuilt/5.4/arm64" name="platform/packages/modules/BootPrebuilt/5.4/arm64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="packages/modules/BootPrebuilt/5.10/arm64" name="platform/packages/modules/BootPrebuilt/5.10/arm64" groups="aosp,pdk" clone-depth="1" />
+  <remove-project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="aosp,pdk-fs" clone-depth="1" />
+  <remove-project path="prebuilts/qemu-kernel" name="platform/prebuilts/qemu-kernel" groups="aosp,pdk" clone-depth="1" />
+
+
+  <!-- System projects -->
+  <remove-project path="system/chre" name="platform/system/chre"  groups="aosp,pdk" />
+
+
+  <!-- notdefault projects -->
+  <remove-project path="external/adt-infra" name="platform/external/adt-infra" groups="adt-infra,notdefault,pdk-fs" />
+  <remove-project path="tools/adt/idea" name="platform/tools/adt/idea" groups="notdefault,tools" />
+  <remove-project path="tools/base" name="platform/tools/base" groups="notdefault,tools" />
+  <remove-project path="tools/build" name="platform/tools/build" groups="notdefault,tools" />
+  <remove-project path="tools/idea" name="platform/tools/idea" groups="notdefault,tools" />
+  <remove-project path="tools/motodev" name="platform/tools/motodev" groups="notdefault,motodev" />
+  <remove-project path="tools/studio/cloud" name="platform/tools/studio/cloud" groups="notdefault,tools" />
+  <remove-project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
+
+
+  <!-- Ungrouped projects -->
+  <remove-project path="external/OpenCL-CTS" name="platform/external/OpenCL-CTS" />
+  <remove-project path="external/toolchain-utils" name="platform/external/toolchain-utils" />
+  <remove-project path="external/universal-tween-engine" name="platform/external/universal-tween-engine" />
+  <remove-project path="frameworks/opt/localepicker" name="platform/frameworks/opt/localepicker" />
+  <remove-project path="packages/modules/TestModule" name="platform/packages/modules/TestModule" />
+  <remove-project path="test/cts-root" name="platform/test/cts-root" />
+  <remove-project path="test/mts" name="platform/test/mts" />
+  <remove-project path="test/catbox" name="platform/test/catbox" />
+  <remove-project path="toolchain/benchmark" name="toolchain/benchmark" />
+
+</manifest>
+
