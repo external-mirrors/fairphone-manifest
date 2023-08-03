@@ -28,6 +28,7 @@
   <project name="platform/hardware/qcom/display" path="hardware/qcom/display" groups="clo" />
   <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" groups="clo" />
   <project name="platform/hardware/qcom/media" path="hardware/qcom/media" groups="clo" />
+  <project name="platform/hardware/qcom/thermal" path="hardware/qcom/thermal" groups="clo" />
   <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" groups="clo" />
 
 
