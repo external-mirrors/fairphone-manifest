@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Device projects -->
+  <project path="device/fairphone/FP4" name="device/fairphone/fp4" groups="fairphone" />
+  <project path="device/fairphone/fp4-sibon" name="device/fairphone/fp4-sibon" groups="fairphone" />
+
+  <!-- Vendor projects -->
+
+  <project path="vendor/fairphone/fp4" name="vendor/fairphone/fp4" groups="fairphone" />
+  <project path="vendor/fairphone/fp4-sibon" name="vendor/fairphone/fp4-sibon" groups="fairphone" />
+  <project path="vendor/fairphone/media" name="vendor/fairphone/media" groups="fairphone" />
+</manifest>
