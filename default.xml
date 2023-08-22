@@ -829,6 +829,7 @@
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="aosp,tools,cts,pdk,pdk-cw-fs,pdk-fs" />
 
   <include name="snippets/remove.xml" />
+  <include name="snippets/codelinaro.xml" />
 
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
