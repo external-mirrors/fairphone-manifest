@@ -619,7 +619,6 @@
   <project path="packages/apps/SecureElement" name="platform/packages/apps/SecureElement" groups="aosp,apps_se,pdk-fs" />
   <project path="packages/apps/Settings" name="platform/packages/apps/Settings" groups="aosp,pdk-fs" />
   <project path="packages/apps/SettingsIntelligence" name="platform/packages/apps/SettingsIntelligence" groups="aosp,pdk-fs" />
-  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="aosp,pdk-fs" />
   <project path="packages/apps/SpareParts" name="platform/packages/apps/SpareParts" groups="aosp,pdk-fs" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" groups="aosp,apps_stk,pdk-fs" />
   <project path="packages/apps/StorageManager" name="platform/packages/apps/StorageManager" groups="aosp,pdk-fs" />
