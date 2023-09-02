@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote fetch=".." name="origin" />
-    <default remote="origin" revision="odm/dev/target/13/fp5" />
+    <default remote="origin" revision="refs/heads/odm/dev/target/13/fp5" />
 
     <project path="kernel/msm-5.4" name="kernel/msm-5.4"/>
     <project path="kernel/msm-5.4/techpack/audio" name="platform/vendor/opensource/audio-kernel" />
@@ -13,5 +13,5 @@
     <project path="kernel/msm-5.4/drivers/staging/wlan-qc/qca-wifi-host-cmn" name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" />
     <project path="kernel/msm-5.4/drivers/staging/wlan-qc/qcacld-3.0" name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" />
 
-    <project path="kernel/msm-5.4/arch/arm64/boot/dts/vendor" name="kernel/msm-extra/devicetree" revision="kernel/13/fp5" />
+    <project path="kernel/msm-5.4/arch/arm64/boot/dts/vendor" name="kernel/msm-extra/devicetree" revision="refs/heads/kernel/13/fp5" />
 </manifest>
