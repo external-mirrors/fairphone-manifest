@@ -773,10 +773,6 @@
   <project name="kernel/msm-5.4"/>
   <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal"/>
   <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl"/>
-  <project name="platform/hardware/qcom/display" path="hardware/qcom/display">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-product.mk" src="config/display-product.mk"/>
-    <linkfile dest="vendor/qcom/defs/board-defs/vendor/display-board.mk" src="config/display-board.mk"/>
-  </project>
   <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-hal.mk" src="gps_vendor_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/gps-board.mk" src="gps_vendor_board.mk"/>
