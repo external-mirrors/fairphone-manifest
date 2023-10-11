@@ -12,4 +12,6 @@
     <project path="kernel/msm-4.19/drivers/staging/wlan-qc/fw-api" name="platform/vendor/qcom-opensource/wlan/fw-api" />
     <project path="kernel/msm-4.19/drivers/staging/wlan-qc/qca-wifi-host-cmn" name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" />
     <project path="kernel/msm-4.19/drivers/staging/wlan-qc/qcacld-3.0" name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" />
+
+    <project path="kernel/msm-4.19/arch/arm64/boot/dts/vendor" name="kernel/msm-extra/devicetree" />
 </manifest>
