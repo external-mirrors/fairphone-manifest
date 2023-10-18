@@ -2,7 +2,7 @@
 <manifest>
   <remote  name="origin"
            fetch=".." />
-  <default revision="refs/heads/odm/rc/target/12/fp4"
+  <default revision="refs/heads/odm/rc/target/13/fp4"
            remote="origin"
            sync-j="4"
            sync-c="true"
@@ -69,12 +69,6 @@
   <project name="platform/dalvik" path="dalvik"/>
   <project name="platform/developers/build" path="developers/build"/>
   <project name="platform/development" path="development"/>
-  <project name="platform/external/FP16" path="external/FP16"/>
-  <project name="platform/external/FXdiv" path="external/FXdiv"/>
-  <project name="platform/external/ImageMagick" path="external/ImageMagick"/>
-  <project name="platform/external/OpenCSD" path="external/OpenCSD"/>
-  <project name="platform/external/Reactive-Extensions/RxCpp" path="external/Reactive-Extensions/RxCpp"/>
-  <project name="platform/external/XNNPACK" path="external/XNNPACK"/>
   <project name="platform/external/aac" path="external/aac"/>
   <project name="platform/external/adeb" path="external/adeb"/>
   <project name="platform/external/adhd" path="external/adhd"/>
@@ -123,10 +117,10 @@
   <project name="platform/external/curl" path="external/curl"/>
   <project name="platform/external/dagger2" path="external/dagger2"/>
   <project name="platform/external/deqp" path="external/deqp"/>
-  <project name="platform/external/deqp-deps/SPIRV-Headers" path="external/deqp-deps/SPIRV-Headers"/>
-  <project name="platform/external/deqp-deps/SPIRV-Tools" path="external/deqp-deps/SPIRV-Tools"/>
   <project name="platform/external/deqp-deps/amber" path="external/deqp-deps/amber"/>
   <project name="platform/external/deqp-deps/glslang" path="external/deqp-deps/glslang"/>
+  <project name="platform/external/deqp-deps/SPIRV-Headers" path="external/deqp-deps/SPIRV-Headers"/>
+  <project name="platform/external/deqp-deps/SPIRV-Tools" path="external/deqp-deps/SPIRV-Tools"/>
   <project name="platform/external/desugar" path="external/desugar"/>
   <project name="platform/external/dexmaker" path="external/dexmaker"/>
   <project name="platform/external/dlmalloc" path="external/dlmalloc"/>
@@ -155,9 +149,11 @@
   <project name="platform/external/flatbuffers" path="external/flatbuffers"/>
   <project name="platform/external/fmtlib" path="external/fmtlib"/>
   <project name="platform/external/fonttools" path="external/fonttools"/>
+  <project name="platform/external/FP16" path="external/FP16"/>
   <project name="platform/external/freetype" path="external/freetype"/>
   <project name="platform/external/fsck_msdos" path="external/fsck_msdos"/>
   <project name="platform/external/fsverity-utils" path="external/fsverity-utils"/>
+  <project name="platform/external/FXdiv" path="external/FXdiv"/>
   <project name="platform/external/gemmlowp" path="external/gemmlowp"/>
   <project name="platform/external/gflags" path="external/gflags"/>
   <project name="platform/external/giflib" path="external/giflib"/>
@@ -196,6 +192,7 @@
   <project name="platform/external/icu" path="external/icu"/>
   <project name="platform/external/igt-gpu-tools" path="external/igt-gpu-tools"/>
   <project name="platform/external/image_io" path="external/image_io"/>
+  <project name="platform/external/ImageMagick" path="external/ImageMagick"/>
   <project name="platform/external/ims" path="external/ims"/>
   <project name="platform/external/iperf3" path="external/iperf3"/>
   <project name="platform/external/iproute2" path="external/iproute2"/>
@@ -311,6 +308,7 @@
   <project name="platform/external/okhttp" path="external/okhttp"/>
   <project name="platform/external/one-true-awk" path="external/one-true-awk"/>
   <project name="platform/external/opencensus-java" path="external/opencensus-java"/>
+  <project name="platform/external/OpenCSD" path="external/OpenCSD"/>
   <project name="platform/external/openssh" path="external/openssh"/>
   <project name="platform/external/oss-fuzz" path="external/oss-fuzz"/>
   <project name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer"/>
@@ -352,6 +350,7 @@
   <project name="platform/external/python/six" path="external/python/six"/>
   <project name="platform/external/python/uritemplates" path="external/python/uritemplates"/>
   <project name="platform/external/rappor" path="external/rappor"/>
+  <project name="platform/external/Reactive-Extensions/RxCpp" path="external/Reactive-Extensions/RxCpp"/>
   <project name="platform/external/replicaisland" path="external/replicaisland"/>
   <project name="platform/external/rmi4utils" path="external/rmi4utils"/>
   <project name="platform/external/robolectric-shadows" path="external/robolectric-shadows"/>
@@ -420,6 +419,7 @@
   <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8"/>
   <project name="platform/external/wycheproof" path="external/wycheproof"/>
   <project name="platform/external/xmp_toolkit" path="external/xmp_toolkit"/>
+  <project name="platform/external/XNNPACK" path="external/XNNPACK"/>
   <project name="platform/external/xz-embedded" path="external/xz-embedded"/>
   <project name="platform/external/xz-java" path="external/xz-java"/>
   <project name="platform/external/yapf" path="external/yapf"/>
@@ -483,11 +483,11 @@
   <project name="platform/packages/apps/Camera2" path="packages/apps/Camera2"/>
   <project name="platform/packages/apps/Car/Calendar" path="packages/apps/Car/Calendar"/>
   <project name="platform/packages/apps/Car/Cluster" path="packages/apps/Car/Cluster"/>
-  <project name="platform/packages/apps/Car/CompanionDeviceSupport" path="packages/apps/Car/CompanionDeviceSupport"/>
   <project name="platform/packages/apps/Car/Dialer" path="packages/apps/Car/Dialer"/>
   <project name="platform/packages/apps/Car/Hvac" path="packages/apps/Car/Hvac"/>
   <project name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME"/>
   <project name="platform/packages/apps/Car/Launcher" path="packages/apps/Car/Launcher"/>
+  <project name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs"/>
   <project name="platform/packages/apps/Car/LinkViewer" path="packages/apps/Car/LinkViewer"/>
   <project name="platform/packages/apps/Car/LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer"/>
   <project name="platform/packages/apps/Car/Media" path="packages/apps/Car/Media"/>
@@ -497,7 +497,6 @@
   <project name="platform/packages/apps/Car/RotaryController" path="packages/apps/Car/RotaryController"/>
   <project name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings"/>
   <project name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater"/>
-  <project name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs"/>
   <project name="platform/packages/apps/Car/tests" path="packages/apps/Car/tests"/>
   <project name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig"/>
   <project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver"/>
@@ -542,7 +541,6 @@
   <project name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts"/>
   <project name="platform/packages/apps/Stk" path="packages/apps/Stk"/>
   <project name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager"/>
-  <project name="platform/packages/apps/TV" path="packages/apps/TV"/>
   <project name="platform/packages/apps/Tag" path="packages/apps/Tag"/>
   <project name="platform/packages/apps/Terminal" path="packages/apps/Terminal"/>
   <project name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity"/>
@@ -550,6 +548,7 @@
   <project name="platform/packages/apps/TimeZoneData" path="packages/apps/TimeZoneData"/>
   <project name="platform/packages/apps/TimeZoneUpdater" path="packages/apps/TimeZoneUpdater"/>
   <project name="platform/packages/apps/Traceur" path="packages/apps/Traceur"/>
+  <project name="platform/packages/apps/TV" path="packages/apps/TV"/>
   <project name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings"/>
   <project name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker"/>
   <project name="platform/packages/apps/WallpaperPicker2" path="packages/apps/WallpaperPicker2"/>
@@ -764,7 +763,7 @@
   <project name="toolchain/pgo-profiles" path="toolchain/pgo-profiles"/>
   <project name="tools/platform-compat" path="tools/platform-compat"/>
 
-  <!--LA.UM.9.12.r1-13800.02-SMxx50.QSSI12.0-1 repositories-->
+<!--LA.UM.9.12.r1-15200-SMxx50.QSSI13.0-1 repositories-->
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2"/>
   <project name="device/qcom/common">
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
@@ -836,6 +835,6 @@
   <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan"/>
 
 <!--T2M repository-->
+  <project name="device/t2m/common"/>
   <project name="platform/vendor/st" path="vendor/st"/>
-  <project name="device/t2m/common" path="device/t2m/common"/>
 </manifest>
