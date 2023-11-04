@@ -130,8 +130,6 @@
   <remove-project path="hardware/qcom/sm8150/vr" name="platform/hardware/qcom/sm8150/vr" groups="aosp,qcom_sm8150" />
   <remove-project path="hardware/qcom/sm8150p/gps" name="platform/hardware/qcom/sm8150p/gps" groups="aosp,qcom_sm8150p" />
   <remove-project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" groups="aosp,qcom_wlan,pdk-qcom" />
-  <remove-project path="hardware/st/nfc" name="platform/hardware/st/nfc" groups="aosp,pdk" />
-  <remove-project path="hardware/st/secure_element" name="platform/hardware/st/secure_element" groups="aosp,pdk" />
   <remove-project path="hardware/ti/am57x" name="platform/hardware/ti/am57x" groups="aosp,pdk" />
 
 

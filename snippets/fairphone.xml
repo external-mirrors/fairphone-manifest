@@ -11,5 +11,4 @@
   <project path="vendor/fairphone/fp4-sibon" name="vendor/fairphone/fp4-sibon" groups="fairphone" />
   <project path="vendor/fairphone/media" name="vendor/fairphone/media" groups="fairphone" />
 
-  <project path="vendor/st" name="platform/vendor/st" groups="fairphone" />
 </manifest>
