@@ -2,7 +2,7 @@
 <manifest>
   <remote  name="origin"
            fetch=".." />
-  <default revision="refs/heads/odm/dev/target/13/fp5"
+  <default revision="refs/heads/odm/rc/target/13/fp5"
            remote="origin"
            sync-j="4" />
 
