@@ -54,6 +54,7 @@
   <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" groups="clo" />
   <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" groups="clo" />
   <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" groups="clo" />
+  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" groups="clo" />
 
 
   <!-- Commonsys projects -->
