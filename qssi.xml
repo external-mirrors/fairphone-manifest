@@ -956,22 +956,6 @@
   <project name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android"/>
   <project name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech"/>
   <project name="platform/prebuilts/misc" path="prebuilts/misc"/>
-  <project name="platform/prebuilts/module_sdk/AdServices" path="prebuilts/module_sdk/AdServices"/>
-  <project name="platform/prebuilts/module_sdk/AppSearch" path="prebuilts/module_sdk/AppSearch"/>
-  <project name="platform/prebuilts/module_sdk/Bluetooth" path="prebuilts/module_sdk/Bluetooth"/>
-  <project name="platform/prebuilts/module_sdk/Connectivity" path="prebuilts/module_sdk/Connectivity"/>
-  <project name="platform/prebuilts/module_sdk/IPsec" path="prebuilts/module_sdk/IPsec"/>
-  <project name="platform/prebuilts/module_sdk/Media" path="prebuilts/module_sdk/Media"/>
-  <project name="platform/prebuilts/module_sdk/MediaProvider" path="prebuilts/module_sdk/MediaProvider"/>
-  <project name="platform/prebuilts/module_sdk/OnDevicePersonalization" path="prebuilts/module_sdk/OnDevicePersonalization"/>
-  <project name="platform/prebuilts/module_sdk/Permission" path="prebuilts/module_sdk/Permission"/>
-  <project name="platform/prebuilts/module_sdk/Scheduling" path="prebuilts/module_sdk/Scheduling"/>
-  <project name="platform/prebuilts/module_sdk/SdkExtensions" path="prebuilts/module_sdk/SdkExtensions"/>
-  <project name="platform/prebuilts/module_sdk/StatsD" path="prebuilts/module_sdk/StatsD"/>
-  <project name="platform/prebuilts/module_sdk/Uwb" path="prebuilts/module_sdk/Uwb"/>
-  <project name="platform/prebuilts/module_sdk/Wifi" path="prebuilts/module_sdk/Wifi"/>
-  <project name="platform/prebuilts/module_sdk/art" path="prebuilts/module_sdk/art"/>
-  <project name="platform/prebuilts/module_sdk/conscrypt" path="prebuilts/module_sdk/conscrypt"/>
   <project name="platform/prebuilts/ndk" path="prebuilts/ndk"/>
   <project name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5"/>
   <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel"/>
