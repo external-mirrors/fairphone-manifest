@@ -68,7 +68,6 @@
   <project name="platform/cts" path="cts"/>
   <project name="platform/dalvik" path="dalvik"/>
   <project name="platform/developers/build" path="developers/build"/>
-  <project name="platform/development" path="development"/>
   <project name="platform/external/aac" path="external/aac"/>
   <project name="platform/external/adeb" path="external/adeb"/>
   <project name="platform/external/adhd" path="external/adhd"/>
@@ -621,7 +620,6 @@
   <project name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" clone-depth="1"/>
   <project name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" clone-depth="1"/>
   <project name="platform/prebuilts/misc" path="prebuilts/misc" clone-depth="1"/>
-  <project name="platform/prebuilts/module_sdk/art" path="prebuilts/module_sdk/art" clone-depth="1"/>
   <project name="platform/prebuilts/ndk" path="prebuilts/ndk" clone-depth="1"/>
   <project name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" clone-depth="1"/>
   <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" clone-depth="1"/>
