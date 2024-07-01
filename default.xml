@@ -9,7 +9,7 @@
            sync-j="4" />
 
   <!-- BEGIN open-source projects -->
-  <project path="build/make" name="platform/build" groups="aosp,pdk,sysui-studio" >
+  <project path="build/make" name="platform/build_repo" groups="aosp,pdk,sysui-studio" >
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
     <linkfile src="core" dest="build/core" />
@@ -964,7 +964,7 @@
   <project path="external/vulkan-headers" name="platform/external/vulkan-headers" groups="aosp,pdk" />
   <project path="external/vulkan-validation-layers" name="platform/external/vulkan-validation-layers" groups="aosp,pdk" />
   <project path="external/walt" name="platform/external/walt" groups="aosp,pdk" />
-  <project path="external/wayland" name="platform/external/wayland" groups="aosp,pdk" />
+  <project path="external/wayland" name="platform/external/wayland_repo" groups="aosp,pdk" />
   <project path="external/wayland-protocols" name="platform/external/wayland-protocols" groups="aosp,pdk" />
   <project path="external/webp" name="platform/external/webp" groups="aosp,pdk,qcom_msm8x26" />
   <project path="external/webrtc" name="platform/external/webrtc" groups="aosp,pdk" />
@@ -1435,7 +1435,7 @@
   <project path="tools/test/mobly_extensions" name="platform/tools/test/mobly_extensions" groups="aosp,pdk" />
   <project path="tools/test/mobly_snippets" name="platform/tools/test/mobly_snippets" groups="aosp,pdk" />
   <project path="tools/test/openhst" name="platform/tools/test/openhst" groups="aosp,tools" />
-  <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="aosp,pdk,tradefed" />
+  <project path="tools/tradefederation/core" name="platform/tools/tradefederation_repo" groups="aosp,pdk,tradefed" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="aosp,pdk,tradefed" />
   <project path="tools/tradefederation/prebuilts" name="platform/tools/tradefederation/prebuilts" groups="aosp,pdk,tradefed" clone-depth="1" />
   <project path="tools/treble" name="platform/tools/treble" groups="aosp,tools,pdk" />
