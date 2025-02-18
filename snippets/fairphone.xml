@@ -4,6 +4,9 @@
   <!-- Device projects -->
   <project path="device/fairphone/FP4" name="device/fairphone/fp4" groups="fairphone" />
 
+  <!-- Kernel projects -->
+  <project path="kernel/msm-4.19/arch/arm64/boot/dts/vendor" name="kernel/msm-extra/devicetree" groups="fairphone" />
+
   <!-- Vendor projects -->
 
   <project path="vendor/fairphone/fp4" name="vendor/fairphone/fp4" groups="fairphone" />
