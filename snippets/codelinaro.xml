@@ -39,7 +39,6 @@
 
 
   <!-- Codeaurora projects -->
-  <project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" groups="clo-s" />
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" groups="clo-s" />
 
 
