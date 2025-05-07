@@ -61,7 +61,7 @@
     <linkfile dest="build/tools" src="tools"/>
   </project>
   <project name="platform/build/blueprint" path="build/blueprint" />
-  <project name="platform/build/soong" path="build/soong" >
+  <project name="platform/build/soong" path="build/soong" revision="refs/heads/odm/public-build/target/14/fp5">
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
@@ -418,7 +418,7 @@
   <project name="platform/external/wayland-protocols" path="external/wayland-protocols" />
   <project name="platform/external/webp" path="external/webp" />
   <project name="platform/external/webrtc" path="external/webrtc" />
-  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" />
+  <project name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="refs/heads/odm/public-build/target/14/fp5" />
   <project name="platform/external/wycheproof" path="external/wycheproof" />
   <project name="platform/external/xmp_toolkit" path="external/xmp_toolkit" />
   <project name="platform/external/xz-embedded" path="external/xz-embedded" />
@@ -590,13 +590,13 @@
   <project name="platform/packages/wallpapers/ImageWallpaper" path="packages/wallpapers/ImageWallpaper" />
   <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" />
   <project name="platform/pdk" path="pdk" />
-  <project name="platform/platform_testing" path="platform_testing" />
+  <project name="platform/platform_testing" path="platform_testing" revision="refs/heads/odm/public-build/target/14/fp5"/>
   <project name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" clone-depth="1" />
   <project name="platform/prebuilts/abi-dumps/platform" path="prebuilts/abi-dumps/platform" clone-depth="1" />
   <project name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" clone-depth="1" />
   <project name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" clone-depth="1" />
   <project name="platform/prebuilts/asuite" path="prebuilts/asuite" clone-depth="1" />
-  <project name="platform/prebuilts/build-tools" path="prebuilts/build-tools" clone-depth="1" />
+  <project name="platform/prebuilts/build-tools" path="prebuilts/build-tools" clone-depth="1" revision="refs/heads/odm/public-build/target/14/fp5"/>
   <project name="platform/prebuilts/bundletool" path="prebuilts/bundletool" clone-depth="1" />
   <project name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" clone-depth="1" />
   <project name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" clone-depth="1" />
@@ -749,14 +749,12 @@
     <linkfile dest="kernel/Android.mk" src="build/stop_scan.mk"/>
     <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk"/>
   </project>
-  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" />
   <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" />
   <project name="platform/vendor/qcom-opensource/display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display" >
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
   </project>
   <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" />
-  <project name="platform/vendor/qcom-opensource/fm-commonsys" path="vendor/qcom/opensource/commonsys/fm" />
   <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" />
   <project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" />
   <project name="platform/vendor/qcom-opensource/system/bt" path="vendor/qcom/opensource/commonsys/system/bt" />
@@ -771,15 +769,15 @@
   </project>
   <project name="device/qcom/sepolicy_vndr"/>
   <project name="device/qcom/vendor-common"/>
-  <project name="kernel/build" path="device/qcom/kernelscripts"/>
-  <project name="kernel/msm-5.4"/>
-  <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal"/>
+  <project name="kernel/build" path="device/qcom/kernelscripts" revision="refs/heads/odm/public-build/target/14/fp5"/>
+  <project name="kernel/msm-5.4" revision="refs/heads/odm/public-build/target/14/fp5"/>
+  <project name="platform/hardware/qcom/audio" path="vendor/qcom/opensource/audio-hal/primary-hal" revision="refs/heads/odm/public-build/target/14/fp5"/>
   <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl"/>
   <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-hal.mk" src="gps_vendor_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/gps-board.mk" src="gps_vendor_board.mk"/>
   </project>
-  <project name="platform/hardware/qcom/media" path="hardware/qcom/media">
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="refs/heads/odm/public-build/target/14/fp5">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/video-product.mk" src="product.mk"/>
   </project>
   <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal"/>
@@ -805,11 +803,8 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/dataservices_vendor_product.mk" src="dataservices_vendor_product.mk"/>
   </project>
   <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm"/>
-  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager"/>
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="refs/heads/odm/public-build/target/14/fp5"/>
   <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext"/>
-  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location">
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-opensource.mk" src="gps_vendor_product.mk"/>
-  </project>
   <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils"/>
   <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/power-vendor-product.mk" src="power-vendor-product.mk"/>
@@ -823,7 +818,7 @@
   <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/usb_vendor_product.mk" src="vendor_product.mk"/>
   </project>
-  <project name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator">
+  <project name="platform/vendor/qcom-opensource/vibrator" path="vendor/qcom/opensource/vibrator" revision="refs/heads/odm/public-build/target/14/fp5">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/vibrator_product.mk" src="vibrator-vendor-product.mk"/>
   </project>
   <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig"/>
@@ -833,7 +828,7 @@
   <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut"/>
   <project name="platform/vendor/qcom/holi" path="device/qcom/holi"/>
   <project name="platform/vendor/qcom/kona" path="device/qcom/kona"/>
-  <project name="platform/vendor/qcom/lahaina" path="device/qcom/lahaina"/>
+  <project name="platform/vendor/qcom/lahaina" path="device/qcom/lahaina" revision="refs/heads/odm/public-build/target/14/fp5"/>
   <project name="platform/vendor/qcom/opensource/datarmnet" path="vendor/qcom/opensource/datarmnet">
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/datarmnet_dlkm_vendor_board.mk" src="datarmnet_dlkm_vendor_board.mk"/>
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_dlkm_vendor_product.mk" src="datarmnet_dlkm_vendor_product.mk"/>
@@ -843,6 +838,7 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/datarmnet_ext_dlkm_vendor_product.mk" src="datarmnet_ext_dlkm_vendor_product.mk"/>
   </project>
   <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan"/>
+  <project path="kernel/msm-5.4/arch/arm64/boot/dts/vendor" name="kernel/msm-extra/devicetree" revision="refs/heads/kernel/14/fp5" />
 
   <!--T2M repository-->
   <project name="platform/vendor/st" path="vendor/st"/>
