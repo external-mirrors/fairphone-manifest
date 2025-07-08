@@ -580,6 +580,26 @@
   <project name="platform/prebuilts/go/darwin-x86" path="prebuilts/go/darwin-x86"/>
   <project name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin"/>
   <project name="platform/prebuilts/manifest-merger" path="prebuilts/manifest-merger"/>
+  <project name="platform/prebuilts/module_sdk/AdServices" path="prebuilts/module_sdk/AdServices" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/AppSearch" path="prebuilts/module_sdk/AppSearch" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/art" path="prebuilts/module_sdk/art" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/Bluetooth" path="prebuilts/module_sdk/Bluetooth" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/ConfigInfrastructure" path="prebuilts/module_sdk/ConfigInfrastructure" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/Connectivity" path="prebuilts/module_sdk/Connectivity" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/conscrypt" path="prebuilts/module_sdk/conscrypt" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/DeviceLock" path="prebuilts/module_sdk/DeviceLock" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/HealthFitness" path="prebuilts/module_sdk/HealthFitness" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/IPsec" path="prebuilts/module_sdk/IPsec" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/Media" path="prebuilts/module_sdk/Media" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/MediaProvider" path="prebuilts/module_sdk/MediaProvider" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/OnDevicePersonalization" path="prebuilts/module_sdk/OnDevicePersonalization" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/Permission" path="prebuilts/module_sdk/Permission" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/RemoteKeyProvisioning" path="prebuilts/module_sdk/RemoteKeyProvisioning" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/Scheduling" path="prebuilts/module_sdk/Scheduling" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/SdkExtensions" path="prebuilts/module_sdk/SdkExtensions" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/StatsD" path="prebuilts/module_sdk/StatsD" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/Uwb" path="prebuilts/module_sdk/Uwb" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
+  <project name="platform/prebuilts/module_sdk/Wifi" path="prebuilts/module_sdk/Wifi" revision="refs/heads/odm/public-build/qssi/15/fp5"/>
   <project name="platform/prebuilts/ndk" path="prebuilts/ndk"/>
   <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" clone-depth="1"/>
   <project name="platform/prebuilts/r8" path="prebuilts/r8"/>
