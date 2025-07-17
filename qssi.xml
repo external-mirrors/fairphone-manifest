@@ -1264,6 +1264,17 @@
   <project name="platform/prebuilts/go/darwin-x86" path="prebuilts/go/darwin-x86"/>
   <project name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin"/>
   <project name="platform/prebuilts/manifest-merger" path="prebuilts/manifest-merger"/>
+  <project name="platform/prebuilts/module_sdk/art" path="prebuilts/module_sdk/art" revision="refs/heads/odm/public-build/qssi/15/fp6"/>
+  <project name="platform/prebuilts/module_sdk/AppSearch" path="prebuilts/module_sdk/AppSearch" revision="refs/heads/odm/public-build/qssi/15/fp6"/>
+  <project name="platform/prebuilts/module_sdk/Bluetooth" path="prebuilts/module_sdk/Bluetooth" revision="refs/heads/odm/public-build/qssi/15/fp6"/>
+  <project name="platform/prebuilts/module_sdk/conscrypt" path="prebuilts/module_sdk/conscrypt" revision="refs/heads/odm/public-build/qssi/15/fp6"/>
+  <project name="platform/prebuilts/module_sdk/CrashRecovery" path="prebuilts/module_sdk/CrashRecovery" revision="refs/heads/odm/public-build/qssi/15/fp6"/>
+  <project name="platform/prebuilts/module_sdk/Media" path="prebuilts/module_sdk/Media" revision="refs/heads/odm/public-build/qssi/15/fp6"/>
+  <project name="platform/prebuilts/module_sdk/MediaProvider" path="prebuilts/module_sdk/MediaProvider" revision="refs/heads/odm/public-build/qssi/15/fp6"/>
+  <project name="platform/prebuilts/module_sdk/Profiling" path="prebuilts/module_sdk/Profiling" revision="refs/heads/odm/public-build/qssi/15/fp6"/>
+  <project name="platform/prebuilts/module_sdk/Scheduling" path="prebuilts/module_sdk/Scheduling" revision="refs/heads/odm/public-build/qssi/15/fp6"/>
+  <project name="platform/prebuilts/module_sdk/StatsD" path="prebuilts/module_sdk/StatsD" revision="refs/heads/odm/public-build/qssi/15/fp6"/>
+  <project name="platform/prebuilts/module_sdk/Wifi" path="prebuilts/module_sdk/Wifi" revision="refs/heads/odm/public-build/qssi/15/fp6"/>
   <project name="platform/prebuilts/ndk" path="prebuilts/ndk"/>
   <project name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel"/>
   <project name="platform/prebuilts/r8" path="prebuilts/r8"/>
