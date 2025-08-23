@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- Bootloader project -->
+  <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" groups="clo" />
+
   <!-- Device projects -->
   <project name="device/qcom/sepolicy" groups="clo-s" />
   <project name="device/qcom/sepolicy_vndr" groups="clo" />
