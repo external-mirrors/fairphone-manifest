@@ -6,6 +6,10 @@
   <project path="device/fairphone/FP3" name="device/fairphone/fp3" groups="fairphone" />
   <project path="device/fairphone/fp3-common" name="device/fairphone/fp3-common" groups="fairphone" />
 
+
+  <!-- AOSP projects -->
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" />
+
   <!-- Vendor projects -->
 
   <project path="vendor/fairphone/fp3" name="vendor/fairphone/fp3" groups="fairphone" />
