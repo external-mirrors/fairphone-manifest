@@ -4,7 +4,7 @@
   <remote  name="origin"
            fetch=".."
            review="review.fairphone.software" />
-  <default revision="refs/heads/int/13/fp3"
+  <default revision="refs/heads/int/14/fp3"
            remote="origin"
            sync-j="4" />
 
