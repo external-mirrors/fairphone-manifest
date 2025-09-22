@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <remote fetch=".." name="origin" />
-    <default remote="origin" revision="refs/heads/kernel/14/fp5" />
+    <default remote="origin" revision="refs/heads/kernel/15/fp5" />
 
     <project path="kernel/msm-5.4" name="kernel/msm-5.4"/>
     <project path="kernel/msm-5.4/techpack/audio" name="platform/vendor/opensource/audio-kernel" />
