@@ -7,6 +7,8 @@
     <project path="kernel/msm-5.4/techpack/audio" name="platform/vendor/opensource/audio-kernel" />
     <project path="kernel/msm-5.4/techpack/camera" name="platform/vendor/opensource/camera-kernel" />
     <project path="kernel/msm-5.4/techpack/dataipa" name="platform/vendor/opensource/dataipa" />
+    <project path="kernel/msm-5.4/techpack/datarmnet" name="platform/vendor/qcom/opensource/datarmnet" />
+    <project path="kernel/msm-5.4/techpack/datarmnet-ext" name="platform/vendor/qcom/opensource/datarmnet-ext" />
     <project path="kernel/msm-5.4/techpack/display" name="platform/vendor/opensource/display-drivers" />
     <project path="kernel/msm-5.4/techpack/video" name="platform/vendor/opensource/video-driver" />
     <project path="kernel/msm-5.4/drivers/staging/wlan-qc/fw-api" name="platform/vendor/qcom-opensource/wlan/fw-api" />
