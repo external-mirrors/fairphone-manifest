@@ -1219,7 +1219,7 @@
   <project name="device/qcom/sepolicy_vndr" path="device/qcom/sepolicy_vndr"/>
   <project name="device/qcom/vendor-common" path="device/qcom/vendor-common"/>
   <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl"/>
-  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="refs/heads/odm/public-build/target/15/fp6">
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/gps-product-hal.mk" src="gps_vendor_product.mk"/>
     <linkfile dest="vendor/qcom/defs/board-defs/vendor/gps-board.mk" src="gps_vendor_board.mk"/>
   </project>
@@ -1333,7 +1333,7 @@
   <project name="platform/vendor/qcom/pitti_32go" path="device/qcom/pitti_32go"/>
   <project name="platform/vendor/qcom/taro" path="device/qcom/taro"/>
   <project name="platform/vendor/qcom/volcano" path="device/qcom/volcano" revision="refs/heads/odm/public-build/target/15/fp6"/>
-  <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan">
+  <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="refs/heads/odm/public-build/target/15/fp6">
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/wlan_techpack.mk" src="wlan_techpack.mk"/>
   </project>
   <project name="platform/vendor/st/opensource/driver" path="vendor/st/opensource/driver">
