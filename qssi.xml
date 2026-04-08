@@ -35,7 +35,7 @@
   <project name="device/qcom/qssi"/>
   <project name="device/qcom/qssi_32"/>
   <project name="device/qcom/qssi_32go"/>
-  <project name="device/qcom/qssi_64"/>
+  <project name="device/qcom/qssi_64" revision="refs/heads/odm/public-build/qssi/16/fp6"/>
   <project name="device/qcom/sepolicy"/>
   <project name="device/sample"/>
   <project name="kernel/configs"/>
@@ -78,13 +78,14 @@
   <project name="platform/build/blueprint" path="build/blueprint"/>
   <project name="platform/build/pesto" path="build/pesto"/>
   <project name="platform/build/release" path="build/release"/>
-  <project name="platform/build/soong" path="build/soong">
+  <project name="platform/build/soong" path="build/soong" revision="refs/heads/odm/public-build/qssi/16/fp6">
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
   <project name="platform/cts" path="cts"/>
   <project name="platform/dalvik" path="dalvik"/>
   <project name="platform/developers/build" path="developers/build"/>
+  <project name="platform/development" path="development" revision="refs/heads/odm/public-build/qssi/16/fp6"/>
   <project name="platform/external/aac" path="external/aac"/>
   <project name="platform/external/abseil-cpp" path="external/abseil-cpp"/>
   <project name="platform/external/accessibility-test-framework" path="external/accessibility-test-framework"/>
@@ -590,7 +591,7 @@
   <project name="platform/external/zstd" path="external/zstd"/>
   <project name="platform/external/zucchini" path="external/zucchini"/>
   <project name="platform/external/zxing" path="external/zxing"/>
-  <project name="platform/frameworks/av" path="frameworks/av"/>
+  <project name="platform/frameworks/av" path="frameworks/av" revision="refs/heads/odm/public-build/qssi/16/fp6"/>
   <project name="platform/frameworks/base" path="frameworks/base"/>
   <project name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc"/>
   <project name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker"/>
@@ -633,6 +634,7 @@
   <project name="platform/hardware/google/camera" path="hardware/google/camera"/>
   <project name="platform/hardware/google/gfxstream" path="hardware/google/gfxstream"/>
   <project name="platform/hardware/google/interfaces" path="hardware/google/interfaces"/>
+  <project name="platform/hardware/interfaces" path="hardware/interfaces" revision="refs/heads/odm/public-build/qssi/16/fp6"/>
   <project name="platform/hardware/libhardware" path="hardware/libhardware"/>
   <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"/>
   <project name="platform/hardware/nxp/keymint" path="hardware/nxp/keymint"/>
@@ -689,7 +691,7 @@
   <project name="platform/packages/apps/DocumentsUI" path="packages/apps/DocumentsUI"/>
   <project name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo"/>
   <project name="platform/packages/apps/Gallery" path="packages/apps/Gallery"/>
-  <project name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2"/>
+  <project name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" revision="refs/heads/odm/public-build/qssi/16/fp6"/>
   <project name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer"/>
   <project name="platform/packages/apps/ImsServiceEntitlement" path="packages/apps/ImsServiceEntitlement"/>
   <project name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain"/>
@@ -713,7 +715,7 @@
   <project name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo"/>
   <project name="platform/packages/apps/SampleLocationAttribution" path="packages/apps/SampleLocationAttribution"/>
   <project name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement"/>
-  <project name="platform/packages/apps/Settings" path="packages/apps/Settings"/>
+  <project name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="refs/heads/odm/public-build/qssi/16/fp6"/>
   <project name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence"/>
   <project name="platform/packages/apps/SnapdragonDeskClock" path="vendor/codeaurora/commonsys/packages/apps/SnapdragonDeskClock">
     <linkfile dest="vendor/qcom/defs/product-defs/system/app_snapDeskClock_system_product.mk" src="app_snapDeskClock_system_product.mk"/>
@@ -799,7 +801,7 @@
   <project name="platform/packages/services/Mms" path="packages/services/Mms"/>
   <project name="platform/packages/services/Mtp" path="packages/services/Mtp"/>
   <project name="platform/packages/services/Telecomm" path="packages/services/Telecomm"/>
-  <project name="platform/packages/services/Telephony" path="packages/services/Telephony"/>
+  <project name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="refs/heads/odm/public-build/qssi/16/fp6"/>
   <project name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker"/>
   <project name="platform/pdk" path="pdk"/>
   <project name="platform/platform_testing" path="platform_testing"/>
@@ -957,7 +959,7 @@
   <project name="platform/tools/tradefederation/prebuilts" path="tools/tradefederation/prebuilts"/>
   <project name="platform/tools/trebuchet" path="tools/trebuchet"/>
   <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer"/>
-  <project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder">
+  <project name="platform/vendor/codeaurora/packages/apps/SoundRecorder" path="vendor/codeaurora/commonsys/packages/apps/SoundRecorder" revision="refs/heads/odm/public-build/qssi/16/fp6">
     <linkfile dest="vendor/qcom/defs/product-defs/system/app_qtiSoundRecorder_product.mk" src="app_qtiSoundRecorder_system_product.mk"/>
   </project>
   <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony"/>
@@ -988,8 +990,6 @@
     <linkfile dest="disregard/Android.mk" src="build/stop_scan.mk"/>
   </project>
   <project name="platform/vendor/qcom-opensource/core-utils-sys" path="vendor/qcom/opensource/core-utils-sys"/>
-  <project name="platform/vendor/qcom-opensource/crosvm-gunyah" path="vendor/qcom/opensource/crosvm-gunyah"/>
-  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw"/>
   <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices"/>
   <project name="platform/vendor/qcom-opensource/display-commonsys" path="vendor/qcom/opensource/commonsys/display">
     <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-commonsys.mk" src="config/display-product-commonsys.mk"/>
@@ -999,12 +999,8 @@
     <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk"/>
   </project>
   <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm"/>
-  <project name="platform/vendor/qcom-opensource/fm-commonsys" path="vendor/qcom/opensource/commonsys/fm"/>
-  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces"/>
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="refs/heads/odm/public-build/qssi/16/fp6"/>
   <project name="platform/vendor/qcom/opensource/commonsys-intf/audio" path="vendor/qcom/opensource/commonsys-intf/audio"/>
-  <project name="platform/vendor/qcom/opensource/commonsys/wifi" path="vendor/qcom/opensource/commonsys/wifi">
-    <linkfile dest="vendor/qcom/defs/product-defs/system/qtiwifi-ship-product-defs-system.mk" src="configs/qtiwifi-ship-product-defs-system.mk"/>
-  </project>
   <project name="platform/vendor/st/opensource/frameworks/st21nfc" path="vendor/st/opensource/commonsys/frameworks/st21nfc"/>
   <project name="platform/vendor/st/opensource/packages/apps/Nfc" path="vendor/st/opensource/commonsys/packages/apps/Nfc">
     <linkfile dest="vendor/qcom/defs/product-defs/system/nfc-system-product-stm.mk" src="nfc_system_product.mk"/>
