@@ -5,7 +5,6 @@
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="bc5379b564a5cc35f80cd72367fa310400a9f9d4" groups="clo" />
   <project name="device/common" revision="004c1b5e3982e59f4adef0209af1c15cbdcb4afe" groups="aosp,pdk,pdk-cw-fs" />
   <project name="device/fairphone/fp4" path="device/fairphone/FP4" revision="9f07feccea9145b027277725103f9354656bd635" groups="fairphone" />
-  <project name="device/fairphone/fp4-proprietary" revision="817fb65ca8c4f31f386a9ea647f6252dfce10f1c" groups="fairphone,local::proprietary" />
   <project name="device/generic/arm64" revision="3849335f68b2593ca4e1a8ca8e3996a2e93aea34" groups="aosp,pdk" />
   <project name="device/generic/common" revision="7a65470fb888803193b323785287520b243610ac" groups="aosp,pdk" />
   <project name="device/google/cuttlefish" revision="c7ca5745085cffdf95d7cf1f7f6c6959a7fb7230" groups="aosp,device,pdk" />
